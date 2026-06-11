@@ -417,6 +417,8 @@ function changeMusic(fileName){
 
 }
 
+changeMusic("music/loveletter.mp3");
+
 
 function goToLetter(){
 
