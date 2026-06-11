@@ -111,11 +111,18 @@ margin-top:50px;
 }
 
 .star{
-font-size:60px;
-cursor:pointer;
-animation:float 2s infinite ease-in-out;
-z-index:1000;
-position:relative;
+    background: transparent;
+    border: none;
+    font-size: 60px;
+    cursor: pointer;
+
+    animation: float 2s infinite ease-in-out;
+
+    transition: transform .3s ease;
+}
+
+.star:hover{
+    transform: scale(1.3);
 }
 @keyframes float{
 0%{transform:translateY(0);}
