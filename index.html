@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Mariya ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<audio autoplay loop id="bgMusic">
+    <source src="music/theme.mp3" type="audio/mpeg">
+</audio>
+
+<section class="hero">
+
+    <div class="overlay"></div>
+
+    <h1>Happy Birthday Mariya ✨</h1>
+
+    <p>
+        Tonight, I want to show you a story...
+        <br>
+        Our story.
+    </p>
+
+    <button onclick="startJourney()">
+        Begin The Journey
+    </button>
+
+</section>
+
+<section id="journalSection" class="hidden">
+
+    <div class="journal">
+
+        <div class="page active">
+
+            <h2>School Days</h2>
+
+            <p>
+                Write your school memories here.
+            </p>
+
+        </div>
+
+        <div class="page">
+
+            <h2>My Loneliness Phase</h2>
+
+            <p>
+                Write your loneliness phase here.
+            </p>
+
+        </div>
+
+        <div class="page">
+
+            <h2>Our Meeting Phase</h2>
+
+            <p>
+                Write your meeting memories here.
+            </p>
+
+        </div>
+
+        <div class="controls">
+
+            <button onclick="prevPage()">←</button>
+
+            <button onclick="nextPage()">→</button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
