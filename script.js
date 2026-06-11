@@ -416,3 +416,96 @@ function changeMusic(fileName){
     });
 
 }
+
+
+function goToLetter(){
+
+    document
+    .getElementById("futureSection")
+    .style.display = "none";
+
+    document
+    .getElementById("loveLetterSection")
+    .classList.remove("hidden");
+
+}
+
+const letterText = `
+
+My Dearest Mariya,
+
+Today is your birthday.
+
+And before anything else,
+I just want to thank you.
+
+Thank you for becoming one of
+the most beautiful parts of my life.
+
+Thank you for every smile.
+
+Thank you for every memory.
+
+Thank you for simply being you.
+
+The truth is...
+
+somewhere along this journey,
+
+you became much more than
+just another person in my life.
+
+You became someone I care about deeply.
+
+Someone I pray for.
+
+Someone I dream about.
+
+Someone I imagine a future with.
+
+And today,
+
+with all my heart,
+
+I want you to know that
+
+I love you.
+
+❤️
+
+`;
+
+function openLetter(){
+
+    document
+    .querySelector(".letter-container")
+    .style.display = "none";
+
+    document
+    .getElementById("letterContent")
+    .classList.remove("hidden");
+
+    let i = 0;
+
+    const speed = 35;
+
+    function type(){
+
+        if(i < letterText.length){
+
+            document
+            .getElementById("typedLetter")
+            .innerHTML += letterText.charAt(i);
+
+            i++;
+
+            setTimeout(type, speed);
+
+        }
+
+    }
+
+    type();
+
+}
+
