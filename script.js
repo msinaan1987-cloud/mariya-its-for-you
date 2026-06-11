@@ -365,6 +365,14 @@ document
 
 function goToFuture(){
 
+const music =
+document.getElementById("bgMusic");
+
+music.src =
+"music/future.mp3";
+
+music.play();
+
 document
 .getElementById("harryPotterSection")
 .style.display="none";
@@ -374,7 +382,6 @@ document
 .classList.remove("hidden");
 
 }
-
 
 function toggleMusic(){
 
@@ -390,5 +397,22 @@ function toggleMusic(){
         music.pause();
 
     }
+
+}
+
+
+function changeMusic(fileName){
+
+    const music = document.getElementById("bgMusic");
+
+    music.pause();
+
+    music.src = fileName;
+
+    music.load();
+
+    music.play().catch(err => {
+        console.log("Music error:", err);
+    });
 
 }
