@@ -20,6 +20,14 @@ currentPage++;
 showPage(currentPage);
 
 }
+else{
+
+document.getElementById("journalSection").style.display = "none";
+
+document.getElementById("starsSection").classList.remove("hidden");
+
+}
+
 }
 
 function prevPage(){
