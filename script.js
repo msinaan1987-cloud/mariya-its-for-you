@@ -62,7 +62,7 @@ alert("Reason 2: Your kindness ❤️");
 }
 
 if(number === 3){
-alert("# 100 Reasons I Love You, Mariya
+alert('# 100 Reasons I Love You, Mariya
 
 1. Because your smile can change my entire day.
 
@@ -263,7 +263,7 @@ alert("# 100 Reasons I Love You, Mariya
 99. Because I can imagine a future with you.
 
 100. Because out of all the people in this world, my heart chose you.
-");
+');
 }
 
 }
