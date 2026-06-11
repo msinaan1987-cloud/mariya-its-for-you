@@ -50,3 +50,19 @@ document
 .classList.remove("hidden");
 
 }
+
+function showReason(number){
+
+if(number === 1){
+alert("Reason 1: Your smile ❤️");
+}
+
+if(number === 2){
+alert("Reason 2: Your kindness ❤️");
+}
+
+if(number === 3){
+alert("100 Reasons Coming Soon ❤️");
+}
+
+}
