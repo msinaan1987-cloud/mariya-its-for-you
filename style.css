@@ -114,8 +114,9 @@ margin-top:50px;
 font-size:60px;
 cursor:pointer;
 animation:float 2s infinite ease-in-out;
+z-index:1000;
+position:relative;
 }
-
 @keyframes float{
 0%{transform:translateY(0);}
 50%{transform:translateY(-15px);}
