@@ -365,7 +365,33 @@ document
 
 function goToFuture(){
 
-alert("Future Dreams Section Coming Next ❤️");
+document
+.getElementById("harryPotterSection")
+.style.display="none";
+
+document
+.getElementById("futureSection")
+.classList.remove("hidden");
+
+}
+
+function goToFuture(){
+
+const music =
+document.getElementById("bgMusic");
+
+music.src =
+"music/future.mp3";
+
+music.play();
+
+document
+.getElementById("harryPotterSection")
+.style.display="none";
+
+document
+.getElementById("futureSection")
+.classList.remove("hidden");
 
 }
 
