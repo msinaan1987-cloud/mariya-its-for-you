@@ -317,3 +317,79 @@ transform:translateY(0);
 }
 
 }
+
+
+#loveLetterSection{
+
+height:100vh;
+
+background:
+linear-gradient(
+to bottom,
+#ffd6e7,
+#ffc0cb
+);
+
+display:flex;
+
+justify-content:center;
+align-items:center;
+
+flex-direction:column;
+}
+
+.letter{
+
+font-size:6rem;
+
+cursor:pointer;
+
+text-align:center;
+
+animation:bounce 2s infinite;
+}
+
+.paper{
+
+background:#fff8e7;
+
+padding:40px;
+
+width:90%;
+
+max-width:800px;
+
+border-radius:20px;
+
+color:black;
+
+box-shadow:0 0 30px rgba(0,0,0,.2);
+}
+
+.paper h1{
+
+margin-bottom:20px;
+}
+
+.paper p{
+
+font-size:1.2rem;
+
+line-height:2;
+}
+
+@keyframes bounce{
+
+0%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-15px);
+}
+
+100%{
+transform:translateY(0);
+}
+
+}
