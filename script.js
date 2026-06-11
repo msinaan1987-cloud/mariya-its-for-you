@@ -420,16 +420,17 @@ function changeMusic(fileName){
 
 function goToLetter(){
 
+    changeMusic("music/loveletter.mp3");
+
     document
     .getElementById("futureSection")
-    .style.display = "none";
+    .style.display="none";
 
     document
     .getElementById("loveLetterSection")
     .classList.remove("hidden");
 
 }
-
 const letterText = `
 
 My Dearest Mariya,
@@ -509,3 +510,18 @@ function openLetter(){
 
 }
 
+function changeMusic(fileName){
+
+    const music = document.getElementById("bgMusic");
+
+    music.pause();
+
+    music.src = fileName;
+
+    music.load();
+
+    music.volume = 0.25;
+
+    music.play();
+
+}
