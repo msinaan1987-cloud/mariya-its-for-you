@@ -39,15 +39,19 @@ function prevPage() {
     }
 
 }
-
 function startJourney() {
+
+    const music = document.getElementById("bgMusic");
+
+    music.volume = 0.3;
+
+    music.play();
 
     document.querySelector(".hero").style.display = "none";
 
     document
         .getElementById("journalSection")
         .classList.remove("hidden");
-
 }
 
 function showReason(number){
