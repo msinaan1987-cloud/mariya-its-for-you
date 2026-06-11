@@ -306,3 +306,26 @@ document
 .classList.add("hidden");
 
 }
+
+let hpCurrent = 0;
+
+const hpSlides =
+document.querySelectorAll(".hp-slide");
+
+function nextHpSlide(){
+
+hpSlides[hpCurrent]
+.classList.remove("active-slide");
+
+hpCurrent++;
+
+if(hpCurrent >= hpSlides.length){
+
+hpCurrent = hpSlides.length - 1;
+
+}
+
+hpSlides[hpCurrent]
+.classList.add("active-slide");
+
+}
