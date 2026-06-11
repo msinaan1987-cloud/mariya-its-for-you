@@ -298,3 +298,11 @@ text.innerHTML = `
 }
 
 }
+
+function closePopup(){
+
+document
+.getElementById("reasonPopup")
+.classList.add("hidden");
+
+}
