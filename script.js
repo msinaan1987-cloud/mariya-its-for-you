@@ -87,7 +87,10 @@ You make me feel understood in a way nobody else does.
 if(number === 3){
 
 text.innerHTML = `
-<h2>100 Reasons Why I Love You ❤️</h2>
+
+<h2>
+100 Reasons Why I Love You ❤️
+</h2>
 
 <p>
 # 100 Reasons I Love You, Mariya
@@ -293,9 +296,16 @@ text.innerHTML = `
 100. Because out of all the people in this world, my heart chose you.
 
 </p>
-`;
 
-}
+<br>
+
+<button onclick="startHarryPotter()">
+
+Continue To The Next Chapter ✨
+
+</button>
+
+`;
 
 }
 
@@ -327,5 +337,27 @@ hpCurrent = hpSlides.length - 1;
 
 hpSlides[hpCurrent]
 .classList.add("active-slide");
+
+}
+
+function startHarryPotter(){
+
+document
+.getElementById("reasonPopup")
+.classList.add("hidden");
+
+document
+.getElementById("starsSection")
+.style.display="none";
+
+document
+.getElementById("harryPotterSection")
+.classList.remove("hidden");
+
+}
+
+function goToFuture(){
+
+alert("Future Dreams Section Coming Next ❤️");
 
 }
