@@ -91,3 +91,33 @@ margin-top:30px;
 display:flex;
 justify-content:space-between;
 }
+
+#starsSection{
+height:100vh;
+background:#0b1026;
+color:white;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.sky{
+width:100%;
+display:flex;
+justify-content:space-around;
+margin-top:50px;
+}
+
+.star{
+font-size:60px;
+cursor:pointer;
+animation:float 2s infinite ease-in-out;
+}
+
+@keyframes float{
+0%{transform:translateY(0);}
+50%{transform:translateY(-15px);}
+100%{transform:translateY(0);}
+}
