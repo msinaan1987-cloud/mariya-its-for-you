@@ -561,3 +561,68 @@ function goToVideo(){
         .classList.remove("hidden");
 
 }
+
+function showFinalQuestion(){
+
+    document
+    .getElementById("proposalSection")
+    .style.display = "none";
+
+    document
+    .getElementById("finalProposalSection")
+    .classList.remove("hidden");
+
+}
+
+function showCrimsonQuestion(){
+
+    document
+    .getElementById("finalProposalSection")
+    .style.display="none";
+
+    document
+    .getElementById("crimsonSection")
+    .classList.remove("hidden");
+
+}
+
+function showEnding(){
+
+    document
+    .getElementById("crimsonSection")
+    .style.display="none";
+
+    document
+    .getElementById("endingSection")
+    .classList.remove("hidden");
+
+}
+
+function revealSecret(){
+
+    alert(
+
+`The real love letter is waiting for you.
+
+Look under your bed. ❤️`
+
+    );
+
+}
+
+function showEnding(){
+
+    confetti({
+        particleCount: 250,
+        spread: 120
+    });
+
+    document
+    .getElementById("crimsonSection")
+    .style.display="none";
+
+    document
+    .getElementById("endingSection")
+    .classList.remove("hidden");
+
+}
