@@ -525,3 +525,27 @@ function changeMusic(fileName){
     music.play();
 
 }
+
+
+const video =
+document.getElementById("birthdayVideo");
+
+if(video){
+
+video.addEventListener("play",()=>{
+
+document
+.getElementById("bgMusic")
+.pause();
+
+});
+
+video.addEventListener("ended",()=>{
+
+document
+.getElementById("bgMusic")
+.play();
+
+});
+
+}
