@@ -393,3 +393,41 @@ transform:translateY(0);
 }
 
 }
+
+
+#videoSection{
+
+min-height:100vh;
+
+background:
+linear-gradient(
+to bottom,
+#1a1a2e,
+#16213e
+);
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+align-items:center;
+
+text-align:center;
+
+padding:40px;
+
+color:white;
+}
+
+#birthdayVideo{
+
+width:90%;
+
+max-width:900px;
+
+border-radius:20px;
+
+box-shadow:
+0 0 30px rgba(255,255,255,.2);
+}
