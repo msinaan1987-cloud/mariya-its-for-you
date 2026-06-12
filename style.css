@@ -431,3 +431,145 @@ border-radius:20px;
 box-shadow:
 0 0 30px rgba(255,255,255,.2);
 }
+
+/* FINAL PROPOSAL */
+
+#finalProposalSection,
+#crimsonSection,
+#endingSection{
+
+min-height:100vh;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+padding:30px;
+
+background:
+linear-gradient(
+to bottom,
+#ff8fab,
+#ff5d8f
+);
+
+color:white;
+}
+
+#finalProposalSection h1,
+#crimsonSection h1,
+#endingSection h1{
+
+font-size:3rem;
+
+margin-bottom:20px;
+
+text-shadow:
+0 0 15px rgba(255,255,255,.5);
+}
+
+#finalProposalSection p,
+#crimsonSection p,
+#endingSection p{
+
+font-size:1.3rem;
+
+max-width:700px;
+
+line-height:1.8;
+}
+
+/* BUTTONS */
+
+.yes-btn,
+.no-btn,
+#crimsonSection button,
+#endingSection button{
+
+padding:15px 35px;
+
+font-size:1.2rem;
+
+border:none;
+
+border-radius:50px;
+
+cursor:pointer;
+
+margin:15px;
+
+transition:.3s;
+}
+
+.yes-btn{
+
+background:white;
+
+color:#ff5d8f;
+}
+
+.yes-btn:hover{
+
+transform:scale(1.1);
+}
+
+.no-btn{
+
+background:#ffe6ef;
+
+color:#444;
+
+position:absolute;
+}
+
+#crimsonSection button{
+
+background:white;
+
+color:#ff5d8f;
+}
+
+#endingSection button{
+
+background:white;
+
+color:#ff5d8f;
+}
+
+/* HEART ANIMATION */
+
+@keyframes heartbeat{
+
+0%{
+transform:scale(1);
+}
+
+25%{
+transform:scale(1.08);
+}
+
+50%{
+transform:scale(1);
+}
+
+75%{
+transform:scale(1.08);
+}
+
+100%{
+transform:scale(1);
+}
+
+}
+
+#finalProposalSection h1,
+#crimsonSection h1{
+
+animation:heartbeat 2s infinite;
+}
