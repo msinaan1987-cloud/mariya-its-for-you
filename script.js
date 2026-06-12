@@ -549,3 +549,15 @@ document
 });
 
 }
+
+function goToVideo(){
+
+    document
+        .getElementById("loveLetterSection")
+        .style.display = "none";
+
+    document
+        .getElementById("videoSection")
+        .classList.remove("hidden");
+
+}
