@@ -1375,3 +1375,25 @@ opacity:0;
 }
 
 }
+
+#countdownSection{
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+flex-direction:column;
+
+font-size:4rem;
+
+text-align:center;
+
+background:black;
+
+color:white;
+
+}
