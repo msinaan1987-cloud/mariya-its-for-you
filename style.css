@@ -1419,3 +1419,27 @@ cursor:pointer;
 animation:twinkle 2s infinite;
 
 }
+
+.heart{
+
+font-size:120px;
+
+animation:heartbeat 1.5s infinite;
+
+}
+
+@keyframes heartbeat{
+
+0%,100%{
+
+transform:scale(1);
+
+}
+
+50%{
+
+transform:scale(1.2);
+
+}
+
+}
