@@ -55,7 +55,13 @@ function startJourney() {
 }
 
 function showReason(number){
+confetti({
 
+particleCount:50,
+
+spread:70
+
+});
 const popup =
 document.getElementById("reasonPopup");
 
