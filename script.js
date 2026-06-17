@@ -605,7 +605,13 @@ document
 
 }
 function showCrimsonQuestion(){
+confetti({
 
+particleCount:400,
+
+spread:180
+
+});
     document
     .getElementById("finalProposalSection")
     .style.display="none";
@@ -658,7 +664,13 @@ function showEnding(){
 }
 
 function showCrimsonQuestion(){
+confetti({
 
+particleCount:400,
+
+spread:180
+
+});
 document
 .getElementById("finalProposalSection")
 .style.display = "none";
