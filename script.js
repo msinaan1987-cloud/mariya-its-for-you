@@ -624,3 +624,27 @@ function showEnding(){
     .classList.remove("hidden");
 
 }
+
+function showCrimsonQuestion(){
+
+document
+.getElementById("finalProposalSection")
+.style.display = "none";
+
+document
+.getElementById("crimsonSection")
+.classList.remove("hidden");
+
+}
+
+function showEnding(){
+
+document
+.getElementById("crimsonSection")
+.style.display = "none";
+
+document
+.getElementById("endingSection")
+.classList.remove("hidden");
+
+}
