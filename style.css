@@ -1081,3 +1081,47 @@ transition:.8s;
 
 left:100%;
 }
+
+#crimsonSection{
+
+min-height:100vh;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+padding:40px;
+
+background:
+linear-gradient(
+135deg,
+#8b0000,
+#ff4d88
+);
+
+color:white;
+}
+
+#crimsonSection h1{
+
+font-size:3rem;
+
+font-family:'Dancing Script',cursive;
+
+margin-bottom:20px;
+}
+
+#crimsonSection p{
+
+max-width:700px;
+
+font-size:1.3rem;
+
+line-height:2;
+}
