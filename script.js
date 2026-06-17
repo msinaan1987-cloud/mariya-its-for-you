@@ -605,6 +605,7 @@ document
 
 }
 function showCrimsonQuestion(){
+
 confetti({
 
 particleCount:400,
@@ -612,13 +613,26 @@ particleCount:400,
 spread:180
 
 });
-    document
-    .getElementById("finalProposalSection")
-    .style.display="none";
 
-    document
-    .getElementById("crimsonSection")
-    .classList.remove("hidden");
+document
+.getElementById("finalProposalSection")
+.style.display="none";
+
+document
+.getElementById("heartbeatSection")
+.classList.remove("hidden");
+
+setTimeout(()=>{
+
+document
+.getElementById("heartbeatSection")
+.style.display="none";
+
+document
+.getElementById("crimsonSection")
+.classList.remove("hidden");
+
+},5000);
 
 }
 
@@ -683,6 +697,7 @@ function showEnding(){
 }
 
 function showCrimsonQuestion(){
+
 confetti({
 
 particleCount:400,
@@ -690,16 +705,28 @@ particleCount:400,
 spread:180
 
 });
+
 document
 .getElementById("finalProposalSection")
-.style.display = "none";
+.style.display="none";
+
+document
+.getElementById("heartbeatSection")
+.classList.remove("hidden");
+
+setTimeout(()=>{
+
+document
+.getElementById("heartbeatSection")
+.style.display="none";
 
 document
 .getElementById("crimsonSection")
 .classList.remove("hidden");
 
-}
+},5000);
 
+}
 function showEnding(){
 
 document
