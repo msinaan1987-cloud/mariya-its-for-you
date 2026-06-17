@@ -735,3 +735,19 @@ setTimeout(typeHero,100);
 }
 
 typeHero();
+
+function secretMessage(){
+
+alert(
+
+`⭐ Secret Found
+
+Out of every star in this sky...
+
+you're still my favorite one.
+
+❤️`
+
+);
+
+}
