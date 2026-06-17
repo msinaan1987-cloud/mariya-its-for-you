@@ -563,7 +563,7 @@ function goToVideo(){
 function showFinalQuestion(){
 
     document
-    .getElementById("proposalSection")
+    .getElementById("videoSection")
     .style.display = "none";
 
     document
