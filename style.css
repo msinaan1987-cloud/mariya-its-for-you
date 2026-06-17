@@ -929,3 +929,79 @@ scale(1.05);
 box-shadow:
 0 15px 35px rgba(255,105,180,.5);
 }
+
+.heart-btn{
+
+display:block;
+
+margin:40px auto;
+
+padding:20px 50px;
+
+border:none;
+
+border-radius:60px;
+
+cursor:pointer;
+
+font-size:1.2rem;
+
+font-family:'Dancing Script',cursive;
+
+color:white;
+
+background:linear-gradient(
+135deg,
+#ff4d88,
+#ff9ec4
+);
+
+box-shadow:
+0 0 20px rgba(255,77,136,.4),
+0 0 40px rgba(255,77,136,.2);
+
+transition:.4s;
+
+position:relative;
+
+overflow:hidden;
+}
+
+.heart-btn:hover{
+
+transform:
+translateY(-5px)
+scale(1.05);
+
+box-shadow:
+0 0 35px rgba(255,77,136,.7),
+0 0 60px rgba(255,77,136,.4);
+}
+
+.heart-btn::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+left:-100%;
+
+width:100%;
+height:100%;
+
+background:
+linear-gradient(
+90deg,
+transparent,
+rgba(255,255,255,.5),
+transparent
+);
+
+transition:.8s;
+}
+
+.heart-btn:hover::before{
+
+left:100%;
+}
