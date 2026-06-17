@@ -188,19 +188,35 @@ z-index:9999;
 
 .popup-content{
 
-    #popupText{
+background:#f7e7b5;
 
-text-align:left;
+width:90%;
 
-max-height:70vh;
+max-width:800px;
+
+max-height:80vh;
 
 overflow-y:auto;
 
-padding:20px;
+padding:30px;
 
-line-height:1.8;
+border-radius:20px;
+
+color:#2c1810;
+
+font-family:'Dancing Script',cursive;
+
+font-size:1.4rem;
+
 }
 
+#popupText{
+
+text-align:left;
+
+line-height:1.8;
+
+}
 background:#f7e7b5;
 
 width:90%;
@@ -777,7 +793,7 @@ box-shadow:
 0 0 45px rgba(255,77,136,.5);
 }
 
-..hp-next{
+.hp-next{
 
 display:block;
 
@@ -1262,5 +1278,70 @@ transparent 70%
 filter:blur(30px);
 
 pointer-events:none;
+
+}
+
+/* JOURNAL TEXT FIX */
+
+.journal{
+
+color:#2c1810;
+
+}
+
+.page h2{
+
+color:#5c2f0d;
+
+font-family:'Cinzel',serif;
+
+font-size:2.5rem;
+
+text-align:center;
+
+margin-bottom:25px;
+
+}
+
+.page p{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:1.35rem;
+
+line-height:2.1;
+
+color:#2c1810;
+
+}
+
+}
+
+.memory-quote{
+
+color:#6b4423;
+
+font-family:'Dancing Script',cursive;
+
+font-size:1.6rem;
+
+text-align:center;
+
+margin-top:25px;
+
+}
+
+.page{
+
+max-width:750px;
+
+margin:auto;
+
+}
+
+.page p{
+
+text-shadow:
+0 1px 0 rgba(255,255,255,.2);
 
 }
