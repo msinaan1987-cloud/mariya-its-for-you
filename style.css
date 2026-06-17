@@ -60,36 +60,80 @@ display:none;
 }
 
 #journalSection{
+
 height:100vh;
+
 display:flex;
+
 justify-content:center;
+
 align-items:center;
-background:#3b2414;
+
+background:
+linear-gradient(
+180deg,
+#2b1810,
+#4a2c1d,
+#2b1810
+);
+
+overflow:hidden;
+
+position:relative;
+
 }
 
 .journal{
-width:90%;
-max-width:800px;
-background:#f7e7b5;
-padding:40px;
+
+width:80%;
+
+max-width:900px;
+
+padding:50px;
+
+background:
+linear-gradient(
+135deg,
+#f8eac5,
+#edd7a5
+);
+
 border-radius:20px;
-color:black;
+
+box-shadow:
+0 0 50px rgba(0,0,0,.5),
+0 0 120px rgba(255,215,0,.15);
+
+position:relative;
+
+overflow:hidden;
+
 }
 
 .page{
+
 display:none;
-font-family:'Dancing Script',cursive;
-font-size:1.5rem;
+
+opacity:0;
+
+transform:
+rotateY(20deg)
+translateX(50px);
+
+transition:all .8s ease;
+
 }
 
 .page.active{
-display:block;
-}
 
-.controls{
-margin-top:30px;
-display:flex;
-justify-content:space-between;
+display:block;
+
+opacity:1;
+
+transform:
+rotateY(0)
+translateX(0);
+
 }
 
 #starsSection{
@@ -1161,4 +1205,62 @@ touch-action:none;
 section{
 
 transition:all .8s ease;
+}
+
+#journalSection::before{
+
+content:"";
+
+position:absolute;
+
+inset:0;
+
+background-image:
+radial-gradient(circle,#ffd700 2px,transparent 2px);
+
+background-size:80px 80px;
+
+opacity:.25;
+
+animation:starsMove 20s linear infinite;
+
+pointer-events:none;
+
+}
+
+@keyframes starsMove{
+
+from{
+transform:translateY(0);
+}
+
+to{
+transform:translateY(-200px);
+}
+
+}
+
+.journal::before{
+
+content:"";
+
+position:absolute;
+
+top:-50px;
+left:-50px;
+
+width:200px;
+height:200px;
+
+background:
+radial-gradient(
+circle,
+rgba(255,220,120,.4),
+transparent 70%
+);
+
+filter:blur(30px);
+
+pointer-events:none;
+
 }
