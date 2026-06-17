@@ -573,3 +573,53 @@ transform:scale(1);
 
 animation:heartbeat 2s infinite;
 }
+
+.journal-nav{
+
+display:flex;
+
+justify-content:space-between;
+
+margin-top:40px;
+
+width:100%;
+}
+
+.page-btn{
+
+background:rgba(139,69,19,.85);
+
+color:#f8f1d4;
+
+border:2px solid #d4af37;
+
+padding:12px 24px;
+
+font-size:1rem;
+
+font-family:"Georgia",serif;
+
+border-radius:30px;
+
+cursor:pointer;
+
+transition:all .3s ease;
+
+box-shadow:
+0 4px 10px rgba(0,0,0,.25);
+}
+
+.page-btn:hover{
+
+transform:translateY(-3px);
+
+box-shadow:
+0 8px 20px rgba(0,0,0,.35);
+
+background:#8b4513;
+}
+
+.page-btn:active{
+
+transform:scale(.96);
+}
