@@ -636,13 +636,32 @@ function showEnding(){
 
 function revealSecret(){
 
-    alert(
+alert(
 
-`The real love letter is waiting for you.
+`Mariya ❤️
 
-Look under your bed. ❤️`
+Everything you saw today
+was digital.
 
-    );
+The memories.
+
+The story.
+
+The dreams.
+
+The music.
+
+But one thing isn't.
+
+There's a real letter waiting
+for you under your bed.
+
+Every word inside it
+comes directly from my heart.
+
+❤️`
+
+);
 
 }
 
