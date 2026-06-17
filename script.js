@@ -554,21 +554,50 @@ function goToVideo(){
 
 function showFinalQuestion(){
 
-const music =
-document.getElementById("bgMusic");
-
-music.play();
-
 document
 .getElementById("videoSection")
 .style.display = "none";
 
 document
+.getElementById("countdownSection")
+.classList.remove("hidden");
+
+let count = 3;
+
+const countdownText =
+document.getElementById("countdownText");
+
+setTimeout(() => {
+
+countdownText.innerHTML = "3";
+
+setTimeout(() => {
+
+countdownText.innerHTML = "2";
+
+setTimeout(() => {
+
+countdownText.innerHTML = "1";
+
+setTimeout(() => {
+
+document
+.getElementById("countdownSection")
+.style.display="none";
+
+document
 .getElementById("finalProposalSection")
 .classList.remove("hidden");
 
-}
+},1000);
 
+},1000);
+
+},1000);
+
+},2000);
+
+}
 function showCrimsonQuestion(){
 
     document
