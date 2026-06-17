@@ -718,3 +718,83 @@ box-shadow:
 0 0 25px rgba(255,77,136,.8),
 0 0 45px rgba(255,77,136,.5);
 }
+
+.hp-next{
+
+position:fixed;
+
+bottom:30px;
+
+right:30px;
+
+padding:16px 35px;
+
+border:none;
+
+border-radius:50px;
+
+cursor:pointer;
+
+font-size:1rem;
+
+font-family:'Cinzel',serif;
+
+letter-spacing:1px;
+
+color:#fff8dc;
+
+background:
+linear-gradient(
+135deg,
+#740001,
+#d3a625
+);
+
+box-shadow:
+0 0 15px rgba(211,166,37,.5),
+0 0 30px rgba(211,166,37,.3);
+
+transition:all .3s ease;
+
+z-index:100;
+}
+
+.hp-next:hover{
+
+transform:
+translateY(-4px)
+scale(1.05);
+
+box-shadow:
+0 0 25px rgba(211,166,37,.8),
+0 0 40px rgba(211,166,37,.5);
+}
+
+.hp-next:active{
+
+transform:scale(.96);
+}
+
+@keyframes magicGlow{
+
+0%{
+box-shadow:
+0 0 10px rgba(211,166,37,.4);
+}
+
+50%{
+box-shadow:
+0 0 30px rgba(211,166,37,.9);
+}
+
+100%{
+box-shadow:
+0 0 10px rgba(211,166,37,.4);
+}
+
+}
+
+.hp-next{
+
+animation:magicGlow 2s infinite;
+}
