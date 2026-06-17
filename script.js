@@ -363,14 +363,6 @@ document
 
 function goToFuture(){
 
-const music =
-document.getElementById("bgMusic");
-
-music.src =
-"music/future.mp3";
-
-music.play();
-
 document
 .getElementById("harryPotterSection")
 .style.display="none";
@@ -562,13 +554,18 @@ function goToVideo(){
 
 function showFinalQuestion(){
 
-    document
-    .getElementById("videoSection")
-    .style.display = "none";
+const music =
+document.getElementById("bgMusic");
 
-    document
-    .getElementById("finalProposalSection")
-    .classList.remove("hidden");
+music.play();
+
+document
+.getElementById("videoSection")
+.style.display = "none";
+
+document
+.getElementById("finalProposalSection")
+.classList.remove("hidden");
 
 }
 
