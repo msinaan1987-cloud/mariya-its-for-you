@@ -1397,3 +1397,25 @@ background:black;
 color:white;
 
 }
+
+.secret-star{
+
+position:absolute;
+
+top:15%;
+
+right:10%;
+
+background:none;
+
+border:none;
+
+font-size:1.3rem;
+
+color:rgba(255,255,255,.3);
+
+cursor:pointer;
+
+animation:twinkle 2s infinite;
+
+}
