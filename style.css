@@ -1169,3 +1169,35 @@ section{
 
 transition:all .8s ease;
 }
+
+.magic-particles::before,
+.magic-particles::after{
+
+content:"✦ ✧ ✦ ✧ ✦";
+
+position:absolute;
+
+width:100%;
+
+color:rgba(255,215,0,.4);
+
+font-size:30px;
+
+animation:floatMagic 18s linear infinite;
+}
+
+.magic-particles::after{
+
+animation-delay:9s;
+}
+
+@keyframes floatMagic{
+
+0%{
+transform:translateY(100vh);
+}
+
+100%{
+transform:translateY(-100vh);
+}
+}
