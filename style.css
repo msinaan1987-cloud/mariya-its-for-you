@@ -144,6 +144,19 @@ z-index:9999;
 
 .popup-content{
 
+    #popupText{
+
+text-align:left;
+
+max-height:70vh;
+
+overflow-y:auto;
+
+padding:20px;
+
+line-height:1.8;
+}
+
 background:#f7e7b5;
 
 width:90%;
