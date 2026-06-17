@@ -711,3 +711,27 @@ document
 .classList.remove("hidden");
 
 }
+
+const heroMessage =
+"Happy Birthday Mariya ✨";
+
+let heroIndex = 0;
+
+function typeHero(){
+
+if(heroIndex < heroMessage.length){
+
+document
+.getElementById("heroTitle")
+.innerHTML +=
+heroMessage.charAt(heroIndex);
+
+heroIndex++;
+
+setTimeout(typeHero,100);
+
+}
+
+}
+
+typeHero();
