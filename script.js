@@ -303,10 +303,8 @@ text.innerHTML = `
 
 <br>
 
-<button onclick="startHarryPotter()">
-
-Continue To The Next Chapter ✨
-
+<button class="magic-btn" onclick="startHarryPotter()">
+    ✨ Enter Our Hogwarts Story ⚡
 </button>
 
 `;
