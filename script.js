@@ -1008,3 +1008,59 @@ showLine();
 }
 
 animateSchoolMemory();
+
+const lonelyMessages = [
+
+"I thought I could get over your absence.",
+
+"I was wrong.",
+
+"Every day felt a little quieter.",
+
+"I kept opening our chats.",
+
+"I kept rereading old messages.",
+
+"I rode my cycle just to see you once.",
+
+"Those few seconds made my entire day.",
+
+"That's when I realized how much you meant to me. ❤️"
+
+];
+
+function animateLonelyChat(){
+
+const container =
+document.getElementById("lonelyChat");
+
+if(!container) return;
+
+container.innerHTML = "";
+
+let i = 0;
+
+function showMessage(){
+
+if(i < lonelyMessages.length){
+
+container.innerHTML +=
+
+`<div class="chat-bubble">
+${lonelyMessages[i]}
+</div>`;
+
+container.scrollTop =
+container.scrollHeight;
+
+i++;
+
+setTimeout(showMessage,2500);
+
+}
+
+}
+
+showMessage();
+
+}
