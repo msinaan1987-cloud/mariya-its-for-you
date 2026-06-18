@@ -778,3 +778,15 @@ you're still my favorite one.
 );
 
 }
+
+function openMap(){
+
+document
+.getElementById("mapIntro")
+.style.display="none";
+
+document
+.querySelector(".hero")
+.classList.remove("hidden");
+
+}
