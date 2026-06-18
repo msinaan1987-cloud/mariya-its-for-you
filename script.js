@@ -820,155 +820,155 @@ typeMapQuote();
 
 const schoolLines = [
 
-"It all started on the day you came and sat behind my bench."
+"It all started on the day you came and sat behind my bench.",
 
-"Looking back now, it feels like such a small moment."
+"Looking back now, it feels like such a small moment.",
 
-"But somehow, it changed everything."
+"But somehow, it changed everything.",
 
-"From that day on, things moved so fast."
+"From that day on, things moved so fast.",
 
-"I never imagined that the girl sitting behind me..."
+"I never imagined that the girl sitting behind me...",
 
-"Would become someone I could talk to for hours without ever getting bored."
+"Would become someone I could talk to for hours without ever getting bored.",
 
-"Little by little, you became a part of my everyday life."
+"Little by little, you became a part of my everyday life.",
 
-"You laughed at my silly jokes."
+"You laughed at my silly jokes.",
 
-"Even the ones that weren't funny."
+"Even the ones that weren't funny.",
 
-"You listened to me whenever I had something to say."
+"You listened to me whenever I had something to say.",
 
-"And somehow..."
+"And somehow...",
 
-"You always knew how to comfort me whenever I needed it."
+"You always knew how to comfort me whenever I needed it.",
 
-"Those moments may have seemed ordinary."
+"Those moments may have seemed ordinary.",
 
-"But they meant so much to me."
+"But they meant so much to me.",
 
-"You made me happier than you probably ever realized."
+"You made me happier than you probably ever realized.",
 
-"There is one memory that has stayed in my heart all these years."
+"There is one memory that has stayed in my heart all these years.",
 
-"And I don't know if you even remember it."
+"And I don't know if you even remember it.",
 
-"Back then, my friends and I used to play football with a sharpener during school."
+"Back then, my friends and I used to play football with a sharpener during school.",
 
-"One morning, while we were playing..."
+"One morning, while we were playing...",
 
-"I got a cut on my leg from its blade."
+"I got a cut on my leg from its blade.",
 
-"It hurt."
+"It hurt.",
 
-"But what hurt more was that nobody seemed to care."
+"But what hurt more was that nobody seemed to care.",
 
-"Not even my friends asked me what happened."
+"Not even my friends asked me what happened.",
 
-"But you did."
+"But you did.",
 
-"You were the first person to notice."
+"You were the first person to notice.",
 
-"You were the first person to ask me..."
+"You were the first person to ask me...",
 
-"'What happened?'"
+"'What happened?'",
 
-"You even asked if I wanted to wrap it up."
+"You even asked if I wanted to wrap it up.",
 
-"It might have seemed like a small act of kindness to you."
+"It might have seemed like a small act of kindness to you.",
 
-"But to me..."
+"But to me...",
 
-"It was never small."
+"It was never small.",
 
-"At that moment..."
+"At that moment...",
 
-"I felt seen."
+"I felt seen.",
 
-"I felt cared for."
+"I felt cared for.",
 
-"And I felt important."
+"And I felt important.",
 
-"That memory still lives in my heart."
+"That memory still lives in my heart.",
 
-"Because it was one of the first times I saw how beautiful your heart truly was."
+"Because it was one of the first times I saw how beautiful your heart truly was.",
 
-"As time passed..."
+"As time passed...",
 
-"My feelings for you only grew stronger."
+"My feelings for you only grew stronger.",
 
-"Somewhere between our conversations..."
+"Somewhere between our conversations...",
 
-"Your laughter."
+"Your laughter.",
 
-"Your kindness."
+"Your kindness.",
 
-"And all those little moments we shared."
+"And all those little moments we shared.",
 
-"I found myself falling deeply in love with you."
+"I found myself falling deeply in love with you.",
 
-"And the funny thing is..."
+"And the funny thing is...",
 
-"I knew it."
+"I knew it.",
 
-"I knew exactly how I felt."
+"I knew exactly how I felt.",
 
-"But I was terrified of telling you."
+"But I was terrified of telling you.",
 
-"I even prepared a letter."
+"I even prepared a letter.",
 
-"A letter that contained everything I wanted to say."
+"A letter that contained everything I wanted to say.",
 
-"Every feeling."
+"Every feeling.",
 
-"Every hope."
+"Every hope.",
 
-"Every piece of my heart."
+"Every piece of my heart.",
 
-"But every time I thought about giving it to you..."
+"But every time I thought about giving it to you...",
 
-"Fear won."
+"Fear won.",
 
-"I wasn't brave enough back then."
+"I wasn't brave enough back then.",
 
-"I wish I had been."
+"I wish I had been.",
 
-"But I wasn't."
+"But I wasn't.",
 
-"And then..."
+"And then...",
 
-"The last day of school arrived."
+"The last day of school arrived.",
 
-"Out of all the memories from that day."
+"Out of all the memories from that day.",
 
-"One moment shines brighter than the rest."
+"One moment shines brighter than the rest.",
 
-"You gave me a Dairy Milk."
+"You gave me a Dairy Milk.",
 
-"To anyone else..."
+"To anyone else...",
 
-"It might have looked like a simple chocolate."
+"It might have looked like a simple chocolate.",
 
-"But to me..."
+"But to me...",
 
-"It was never just a chocolate."
+"It was never just a chocolate.",
 
-"It became a memory."
+"It became a memory.",
 
-"A beautiful memory."
+"A beautiful memory.",
 
-"A memory I carried with me long after school ended."
+"A memory I carried with me long after school ended.",
 
-"And even now."
+"And even now.",
 
-"After all this time."
+"After all this time.",
 
-"When I look back at where everything began."
+"When I look back at where everything began.",
 
-"I realize that some of the most beautiful chapters of my life..."
+"I realize that some of the most beautiful chapters of my life...",
 
-"Started with a girl."
+"Started with a girl.",
 
 "A girl who simply came and sat behind my bench."
 
