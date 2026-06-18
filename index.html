@@ -195,9 +195,10 @@ onclick="secretMessage()">
             I want us to create our own.
         </p>
 
-       <button class="future-btn" onclick="goToFuture()">
+       <button class="magic-btn"
+onclick="openPensieve()">
 
-✨ See The Future I Dream About ✨
+⚡ Enter The Pensieve
 
 </button>
         
@@ -211,6 +212,53 @@ onclick="secretMessage()">
 
 </section>
 
+    <section id="pensieveSection" class="hidden">
+
+<h1>The Pensieve ⚡</h1>
+
+<p class="pensieve-subtitle">
+
+There are some memories
+I wish I could revisit forever.
+
+</p>
+
+<div class="memory-orbs">
+
+<button class="memory-orb"
+onclick="showMemory(1)">
+
+✨ The Sharpener Day
+
+</button>
+
+<button class="memory-orb"
+onclick="showMemory(2)">
+
+🚲 The Cycle Ride
+
+</button>
+
+<button class="memory-orb"
+onclick="showMemory(3)">
+
+🏆 The Award Ceremony
+
+</button>
+
+</div>
+
+<br>
+
+<button class="pensieve-next"
+onclick="goToFuture()">
+
+Continue To Our Future ❤️
+
+</button>
+
+</section>
+    
     <section id="futureSection" class="hidden">
 
     <h1>Our Future ✨</h1>
