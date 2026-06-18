@@ -381,9 +381,15 @@ document
 
 function goToFuture(){
 
-document
-.getElementById("harryPotterSection")
-.style.display="none";
+const hp =
+document.getElementById("harryPotterSection");
+
+if(hp) hp.style.display = "none";
+
+const pensieve =
+document.getElementById("pensieveSection");
+
+if(pensieve) pensieve.style.display = "none";
 
 document
 .getElementById("futureSection")
