@@ -790,3 +790,30 @@ document
 .classList.remove("hidden");
 
 }
+
+const mapMessage =
+"I solemnly swear that I am up to no good.";
+
+let mapIndex = 0;
+
+function typeMapQuote(){
+
+if(mapIndex < mapMessage.length){
+
+document
+.getElementById("mapQuote")
+.innerHTML +=
+mapMessage.charAt(mapIndex);
+
+mapIndex++;
+
+setTimeout(
+typeMapQuote,
+70
+);
+
+}
+
+}
+
+typeMapQuote();
