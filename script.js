@@ -1,3 +1,5 @@
+let discoveredStars = 0;
+
 let currentPage = 0;
 
 const pages = document.querySelectorAll(".page");
