@@ -18,6 +18,18 @@ function nextPage() {
 
         showPage(currentPage);
 
+        if(currentPage === 1){
+
+            animateLonelyChat();
+
+        }
+
+        if(currentPage === 2){
+
+            animateMeetingScene();
+
+        }
+
     } else {
 
         document.getElementById("journalSection").style.display = "none";
