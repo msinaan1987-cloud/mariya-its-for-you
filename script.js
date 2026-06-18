@@ -1129,3 +1129,68 @@ setTimeout(showMoment,2500);
 showMoment();
 
 }
+
+function openPensieve(){
+
+document
+.getElementById("harryPotterSection")
+.style.display="none";
+
+document
+.getElementById("pensieveSection")
+.classList.remove("hidden");
+
+}
+
+function showMemory(number){
+
+let text = "";
+
+if(number === 1){
+
+text = `
+The Sharpener Day ❤️
+
+Nobody noticed.
+
+Nobody asked.
+
+But you did.
+
+And I never forgot it.
+`;
+
+}
+
+if(number === 2){
+
+text = `
+The Cycle Ride 🚲
+
+I rode all the way just to see you.
+
+Only for a few seconds.
+
+Yet it felt completely worth it.
+`;
+
+}
+
+if(number === 3){
+
+text = `
+The Award Ceremony 🏆
+
+You wore a black dress.
+
+Black nail polish.
+
+And I couldn't stop looking at you.
+`;
+
+}
+
+alert(text);
+
+}
+
