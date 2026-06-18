@@ -1076,3 +1076,56 @@ setTimeout(showMessage,2500);
 showMessage();
 
 }
+
+const meetingMoments = [
+
+"June 7th.",
+
+"The award ceremony.",
+
+"You were wearing a black dress.",
+
+"Black nail polish.",
+
+"You looked beautiful.",
+
+"I couldn't stop looking at you.",
+
+"Fifteen minutes on my cycle suddenly felt worth it.",
+
+"Every ride after that felt easier. ❤️"
+
+];
+
+function animateMeetingScene(){
+
+const container =
+document.getElementById("meetingScene");
+
+if(!container) return;
+
+container.innerHTML = "";
+
+let i = 0;
+
+function showMoment(){
+
+if(i < meetingMoments.length){
+
+container.innerHTML =
+
+`<div class="meeting-line">
+${meetingMoments[i]}
+</div>`;
+
+i++;
+
+setTimeout(showMoment,2500);
+
+}
+
+}
+
+showMoment();
+
+}
