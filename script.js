@@ -974,3 +974,37 @@ const schoolLines = [
 
 ];
 
+function animateSchoolMemory(){
+
+const container =
+document.getElementById("schoolMemory");
+
+if(!container) return;
+
+container.innerHTML = "";
+
+let i = 0;
+
+function showLine(){
+
+if(i < schoolLines.length){
+
+container.innerHTML +=
+
+`<div class="memory-line">
+${schoolLines[i]}
+</div>`;
+
+i++;
+
+setTimeout(showLine,2500);
+
+}
+
+}
+
+showLine();
+
+}
+
+animateSchoolMemory();
