@@ -1619,17 +1619,42 @@ box-shadow:
 
 .meeting-line{
 
-font-size:1.7rem;
+font-size:2.3rem;
 
 text-align:center;
 
 font-family:'Cinzel',serif;
 
-color:#fff;
+.meeting-line{
+
+font-size:2.3rem;
+
+text-align:center;
+
+font-family:'Cinzel',serif;
+
+color:##b01e07;
 
 line-height:1.8;
 
-padding:40px;
+padding:60px 30px;
+
+font-weight:600;
+
+text-shadow:
+0 0 10px rgba(0,0,0,.4);
+
+animation:fadeIn 1s forwards;
+
+}
+line-height:1.8;
+
+padding:60px 30px;
+
+font-weight:600;
+
+text-shadow:
+0 0 10px rgba(0,0,0,.4);
 
 animation:fadeIn 1s forwards;
 
