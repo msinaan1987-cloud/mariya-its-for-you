@@ -1616,3 +1616,21 @@ box-shadow:
 0 4px 12px rgba(0,0,0,.15);
 
 }
+
+.meeting-line{
+
+font-size:1.7rem;
+
+text-align:center;
+
+font-family:'Cinzel',serif;
+
+color:#fff;
+
+line-height:1.8;
+
+padding:40px;
+
+animation:fadeIn 1s forwards;
+
+}
