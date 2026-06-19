@@ -523,6 +523,13 @@ animation:bounce 2s infinite;
 
 .paper{
 
+    box-shadow:
+0 20px 60px rgba(0,0,0,.3);
+
+border-radius:20px;
+
+border:1px solid rgba(212,175,55,.3);
+
 background:#fff8e7;
 
 padding:40px;
@@ -530,8 +537,6 @@ padding:40px;
 width:90%;
 
 max-width:800px;
-
-border-radius:20px;
 
 color:black;
 
@@ -2151,6 +2156,33 @@ filter:
 drop-shadow(
 0 0 20px rgba(255,220,180,.5)
 );
+
+}
+
+.letter-hearts{
+
+font-size:2rem;
+
+opacity:.3;
+
+animation:
+heartFloat 4s ease-in-out infinite;
+
+}
+
+@keyframes heartFloat{
+
+0%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-15px);
+}
+
+100%{
+transform:translateY(0);
+}
 
 }
 
