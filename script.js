@@ -689,7 +689,7 @@ function showEnding(){
     .style.display="none";
 
     document
-    .getElementById("endingSection")
+    .getElementById("memoryBoxSection")
     .classList.remove("hidden");
 
 }
