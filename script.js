@@ -76,6 +76,21 @@ particleCount:50,
 spread:70
 
 });
+  const clickedStar =
+document.querySelector(
+`.star[data-star="${number}"]`
+);
+
+if(clickedStar &&
+!clickedStar.classList.contains("found")){
+
+clickedStar.classList.add("found");
+
+discoveredStars++;
+
+checkConstellation();
+
+}  
 const popup =
 document.getElementById("reasonPopup");
 
