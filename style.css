@@ -162,8 +162,43 @@ width:100%;
 display:flex;
 justify-content:space-around;
 margin-top:50px;
+    position:relative;
+
+overflow:hidden;
+
 }
 
+.sky::before{
+
+content:"";
+
+position:absolute;
+
+inset:0;
+
+background:
+
+radial-gradient(
+circle at 20% 20%,
+rgba(255,255,255,.3),
+transparent
+),
+
+radial-gradient(
+circle at 70% 40%,
+rgba(255,255,255,.25),
+transparent
+),
+
+radial-gradient(
+circle at 40% 80%,
+rgba(255,255,255,.2),
+transparent
+);
+
+pointer-events:none;
+
+}
 .star{
     background: transparent;
     border: none;
@@ -1791,3 +1826,24 @@ filter:drop-shadow(
 animation:none;
 
 }
+
+#constellationMessage{
+
+margin-top:40px;
+
+padding:30px;
+
+animation:fadeIn 2s forwards;
+
+}
+
+#constellationMessage h2{
+
+font-size:2rem;
+
+color:#f5d76e;
+
+font-family:'Cinzel',serif;
+
+}
+
