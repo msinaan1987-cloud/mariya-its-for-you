@@ -1939,7 +1939,7 @@ opacity:0;
 
 .lantern{
 
-width:280px;
+width:240px;
 
 padding:30px;
 
@@ -1970,13 +1970,13 @@ content:"🏮";
 
 position:absolute;
 
-top:-40px;
+top:10px;
 
 left:50%;
 
 transform:translateX(-50%);
 
-font-size:2rem;
+padding-top:60px;
 
 }
 
@@ -2045,5 +2045,23 @@ line-height:2;
 opacity:.9;
 
 font-family:'Dancing Script',cursive;
+
+}
+
+.lantern-container{
+
+display:flex;
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+gap:40px;
+
+max-width:1200px;
+
+margin:0 auto;
+
+padding:40px 20px;
 
 }
