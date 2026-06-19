@@ -2192,3 +2192,41 @@ transform:rotateX(180deg);
 
 }
 
+.memory-box{
+
+display:flex;
+
+flex-wrap:wrap;
+
+gap:20px;
+
+justify-content:center;
+
+}
+
+.memory-box button{
+
+padding:18px 28px;
+
+border:none;
+
+border-radius:30px;
+
+background:rgba(255,255,255,.1);
+
+backdrop-filter:blur(10px);
+
+cursor:pointer;
+
+transition:.4s;
+
+}
+
+.memory-box button:hover{
+
+transform:translateY(-5px);
+
+box-shadow:
+0 0 25px rgba(255,150,200,.4);
+
+}
