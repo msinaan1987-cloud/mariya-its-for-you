@@ -381,6 +381,10 @@ color:#fff8dc;
 
 #futureSection{
 
+position:relative;
+
+overflow:hidden;
+
 min-height:100vh;
 
 background:
@@ -400,6 +404,33 @@ padding:80px 20px;
 
 color:white;
 }
+
+#futureSection::before{
+
+content:"";
+
+position:absolute;
+
+inset:0;
+
+pointer-events:none;
+
+background:
+
+radial-gradient(
+circle at 20% 20%,
+rgba(255,215,120,.12),
+transparent 30%
+),
+
+radial-gradient(
+circle at 80% 70%,
+rgba(255,215,120,.12),
+transparent 30%
+);
+
+}
+
 
 #futureSection h1{
 
@@ -1998,5 +2029,21 @@ animation-delay:3s;
 .lantern5{
 
 animation-delay:4s;
+
+}
+
+.future-intro{
+
+font-size:1.3rem;
+
+max-width:700px;
+
+margin:40px auto 80px;
+
+line-height:2;
+
+opacity:.9;
+
+font-family:'Dancing Script',cursive;
 
 }
