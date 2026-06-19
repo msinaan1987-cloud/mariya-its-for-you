@@ -1779,3 +1779,15 @@ linear-gradient(
 );
 
 }
+
+.star.found{
+
+transform:scale(1.4);
+
+filter:drop-shadow(
+0 0 20px gold
+);
+
+animation:none;
+
+}
