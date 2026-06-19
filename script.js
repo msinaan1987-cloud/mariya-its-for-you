@@ -509,19 +509,17 @@ I love you.
 
 function openLetter(){
 
-    alert("Envelope clicked!");
-
-    
     const envelope =
 document.querySelector(".envelope");
 
 envelope.classList.add("open");
 
+     setTimeout(()=>{
+
+         
     document
     .querySelector(".letter-container")
     .style.display = "none";
-
-   setTimeout(()=>{
 
 document
 .getElementById("letterContent")
