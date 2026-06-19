@@ -2186,4 +2186,8 @@ transform:translateY(0);
 
 }
 
+.envelope.open .envelope-flap{
 
+transform:rotateX(180deg);
+
+}
