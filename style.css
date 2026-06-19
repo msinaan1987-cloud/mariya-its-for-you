@@ -1939,28 +1939,11 @@ opacity:0;
 
 .lantern{
 
-width:240px;
-
-padding:30px;
-
-border-radius:30px;
-
-background:rgba(255,215,120,.12);
-
-backdrop-filter:blur(12px);
-
-border:1px solid rgba(255,220,120,.3);
-
-box-shadow:
-0 0 30px rgba(255,215,120,.25);
-
-margin:40px auto;
-
-text-align:center;
-
 position:relative;
 
-animation:floatLantern 5s ease-in-out infinite;
+padding-top:40px;
+
+overflow:visible;
 
 }
 
@@ -1970,16 +1953,17 @@ content:"🏮";
 
 position:absolute;
 
-top:10px;
+top:-25px;
 
 left:50%;
 
 transform:translateX(-50%);
 
-padding-top:60px;
+font-size:2.5rem;
+
+z-index:5;
 
 }
-
 @keyframes floatLantern{
 
 0%{
