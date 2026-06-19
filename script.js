@@ -1311,3 +1311,15 @@ an entire day better.
 }
 
 }
+
+function goToRealEnding(){
+
+    document
+    .getElementById("memoryBoxSection")
+    .style.display="none";
+
+    document
+    .getElementById("endingSection")
+    .classList.remove("hidden");
+
+}
