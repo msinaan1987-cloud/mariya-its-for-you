@@ -509,14 +509,24 @@ I love you.
 
 function openLetter(){
 
+    const envelope =
+document.querySelector(".envelope");
+
+envelope.classList.add("open");
+
     document
     .querySelector(".letter-container")
     .style.display = "none";
 
-    document
-    .getElementById("letterContent")
-    .classList.remove("hidden");
+   setTimeout(()=>{
 
+document
+.getElementById("letterContent")
+.classList.remove("hidden");
+
+},1500);
+
+    
     let i = 0;
 
     const speed = 35;
