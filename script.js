@@ -1217,3 +1217,16 @@ alert(text);
 
 }
 
+function checkConstellation(){
+
+if(discoveredStars >= 4){
+
+document
+.getElementById(
+"constellationMessage"
+)
+.classList.remove("hidden");
+
+}
+
+}
