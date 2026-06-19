@@ -408,7 +408,7 @@ margin-bottom:50px;
 font-size:3rem;
 }
 
-.dream-card{
+/*.dream-card{
 
 background:rgba(255,255,255,.15);
 
@@ -429,7 +429,7 @@ opacity:0;
 transform:translateY(50px);
 
 animation:fadeUp 1s forwards;
-}
+}*/
 
 .dream-card:nth-child(2){
 animation-delay:.5s;
@@ -1903,5 +1903,100 @@ translateY(-100px);
 opacity:0;
 
 }
+
+}
+
+.lantern{
+
+width:280px;
+
+padding:30px;
+
+border-radius:30px;
+
+background:rgba(255,215,120,.12);
+
+backdrop-filter:blur(12px);
+
+border:1px solid rgba(255,220,120,.3);
+
+box-shadow:
+0 0 30px rgba(255,215,120,.25);
+
+margin:40px auto;
+
+text-align:center;
+
+position:relative;
+
+animation:floatLantern 5s ease-in-out infinite;
+
+}
+
+.lantern::before{
+
+content:"🏮";
+
+position:absolute;
+
+top:-40px;
+
+left:50%;
+
+transform:translateX(-50%);
+
+font-size:2rem;
+
+}
+
+@keyframes floatLantern{
+
+0%{
+
+transform:translateY(0px);
+
+}
+
+50%{
+
+transform:translateY(-12px);
+
+}
+
+100%{
+
+transform:translateY(0px);
+
+}
+
+}
+
+.lantern1{
+
+animation-delay:0s;
+
+}
+
+.lantern2{
+
+animation-delay:1s;
+
+}
+
+.lantern3{
+
+animation-delay:2s;
+
+}
+
+.lantern4{
+
+animation-delay:3s;
+
+}
+
+.lantern5{
+
+animation-delay:4s;
 
 }
