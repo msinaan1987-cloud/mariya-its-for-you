@@ -1241,3 +1241,73 @@ document
 }
 
 }
+
+function openMemory(num){
+
+const text =
+document.getElementById("memoryText");
+
+const popup =
+document.getElementById("memoryPopup");
+
+popup.classList.remove("hidden");
+
+if(num===1){
+
+text.innerHTML=`
+Do You Remember that Anandu
+
+Proposed you??
+
+For a second i thought I'm Dead
+
+But you said you rejected. That made me feel
+
+Alive again.
+`;
+
+}
+
+if(num===2){
+
+text.innerHTML=`
+That award ceremony.
+
+You kept saying
+you weren't beautiful.
+
+I spent the entire day
+thinking the opposite.
+`;
+
+}
+
+if(num===3){
+
+text.innerHTML=`
+When i rode the cycle
+
+To your house
+
+I didn't Know Where would I
+
+End up.
+
+But i wanted to see you
+
+Soo Badly.
+`;
+
+}
+
+if(num===4){
+
+text.innerHTML=`
+A few seconds seeing you
+was enough to make
+an entire day better.
+`;
+
+}
+
+}
