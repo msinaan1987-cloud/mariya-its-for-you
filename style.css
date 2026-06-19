@@ -1945,6 +1945,8 @@ padding-top:40px;
 
 overflow:visible;
 
+    animation:floatLantern 5s ease-in-out infinite;
+
 }
 
 .lantern::before{
