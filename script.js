@@ -509,6 +509,9 @@ I love you.
 
 function openLetter(){
 
+    alert("Envelope clicked!");
+
+    
     const envelope =
 document.querySelector(".envelope");
 
