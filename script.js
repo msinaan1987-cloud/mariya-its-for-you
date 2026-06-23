@@ -807,13 +807,26 @@ you're still my favorite one.
 
 function openMap(){
 
+const spark =
+document.getElementById("spellSpark");
+
+spark.classList.add("spell-cast");
+
 document
 .querySelector(".wand-btn")
-.style.display = "none";
+.disabled = true;
+
+setTimeout(()=>{
 
 document
 .getElementById("mapReveal")
 .classList.remove("hidden");
+
+document
+.querySelector(".wand-btn")
+.style.display="none";
+
+},2000);
 
 }
 
