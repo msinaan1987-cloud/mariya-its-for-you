@@ -2888,3 +2888,53 @@ z-index:9999;
 position:relative;
 z-index:9999;
 }
+
+#spellSpark{
+
+position:absolute;
+
+width:25px;
+height:25px;
+
+border-radius:50%;
+
+background:#ffd700;
+
+box-shadow:
+0 0 30px gold,
+0 0 60px gold;
+
+top:50%;
+left:-100px;
+
+opacity:0;
+
+z-index:1000;
+
+}
+
+.spell-cast{
+
+animation:
+castSpell 2s forwards;
+
+}
+
+@keyframes castSpell{
+
+0%{
+
+left:-100px;
+opacity:1;
+
+}
+
+100%{
+
+left:110%;
+opacity:1;
+
+}
+
+}
+
