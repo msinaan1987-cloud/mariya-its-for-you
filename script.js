@@ -53,9 +53,22 @@ function prevPage() {
     }
 
 }
-function startJourney(){
+function startJourney() {
 
-alert("startJourney is running");
+    const music = document.getElementById("bgMusic");
+
+    if(music){
+        music.volume = 0.3;
+        music.play();
+    }
+
+    document
+    .getElementById("mapIntro")
+    .style.display = "none";
+
+    document
+    .getElementById("journalSection")
+    .classList.remove("hidden");
 
 }
 function showReason(number){
