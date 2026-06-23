@@ -2938,3 +2938,20 @@ opacity:1;
 
 }
 
+.map-text{
+
+animation:
+oathGlow 3s infinite;
+
+}
+
+@keyframes oathGlow{
+
+50%{
+
+text-shadow:
+0 0 20px rgba(255,215,0,.8);
+
+}
+
+}
