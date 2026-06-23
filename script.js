@@ -808,11 +808,11 @@ you're still my favorite one.
 function openMap(){
 
 document
-.getElementById("mapIntro")
-.style.display="none";
+.querySelector(".wand-btn")
+.style.display = "none";
 
 document
-.querySelector(".hero")
+.getElementById("mapReveal")
 .classList.remove("hidden");
 
 }
