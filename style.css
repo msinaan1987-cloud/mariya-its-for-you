@@ -2397,4 +2397,42 @@ box-shadow:
 
 }
 
+.memory-btn{
 
+padding:16px 28px;
+
+border:none;
+
+border-radius:40px;
+
+cursor:pointer;
+
+background:
+linear-gradient(
+135deg,
+#ff8fb1,
+#ffb6c1
+);
+
+color:white;
+
+font-size:1rem;
+
+font-weight:600;
+
+margin:10px;
+
+transition:.4s;
+
+box-shadow:
+0 8px 25px rgba(255,150,180,.35);
+
+}
+
+.memory-btn:hover{
+
+transform:
+translateY(-4px)
+scale(1.03);
+
+}
