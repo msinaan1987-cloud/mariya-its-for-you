@@ -3033,3 +3033,16 @@ text-shadow:none;
 
 }
 
+.map-paper,
+.map-lines{
+
+pointer-events:none;
+
+}
+
+.map-container{
+
+position:relative;
+z-index:10;
+
+}
