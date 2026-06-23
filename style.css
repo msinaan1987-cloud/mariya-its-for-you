@@ -2789,3 +2789,93 @@ scale(1);
 
 }
 
+.map-secret{
+
+font-size:4rem;
+margin-top:40px;
+
+font-family:'Cinzel', serif;
+
+color:#5a3312;
+
+opacity:0;
+
+animation:
+revealInk 2s forwards;
+
+}
+
+.map-message{
+
+font-size:1.3rem;
+
+line-height:2;
+
+color:#4d3116;
+
+margin-top:20px;
+
+opacity:0;
+
+animation:
+revealInk 2s forwards;
+
+animation-delay:1s;
+
+animation-fill-mode:forwards;
+
+}
+
+.map-open-btn{
+
+margin-top:30px;
+
+padding:15px 35px;
+
+border:none;
+
+border-radius:40px;
+
+cursor:pointer;
+
+background:#5a3312;
+
+color:white;
+
+font-size:1rem;
+
+opacity:0;
+
+animation:
+revealInk 2s forwards;
+
+animation-delay:2s;
+
+animation-fill-mode:forwards;
+
+}
+
+@keyframes revealInk{
+
+from{
+
+opacity:0;
+
+filter:blur(10px);
+
+transform:translateY(20px);
+
+}
+
+to{
+
+opacity:1;
+
+filter:blur(0);
+
+transform:translateY(0);
+
+}
+
+}
+
