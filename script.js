@@ -696,35 +696,15 @@ function showEnding(){
 
 function revealSecret(){
 
-alert(
+document
+.getElementById("endingSection")
+.style.display = "none";
 
-`Mariya ❤️
-
-Everything you saw today
-was digital.
-
-The memories.
-
-The story.
-
-The dreams.
-
-The music.
-
-But one thing isn't.
-
-There's a real letter waiting
-for you under your bed.
-
-Every word inside it
-comes directly from my heart.
-
-❤️`
-
-);
+document
+.getElementById("secretSkySection")
+.classList.remove("hidden");
 
 }
-
 function showEnding(){
 
     confetti({
@@ -1321,5 +1301,17 @@ function goToRealEnding(){
     document
     .getElementById("endingSection")
     .classList.remove("hidden");
+
+}
+
+function showRealLetter(){
+
+document
+.getElementById("secretSkySection")
+.style.display = "none";
+
+document
+.getElementById("realLetterSection")
+.classList.remove("hidden");
 
 }
