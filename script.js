@@ -61,15 +61,13 @@ function startJourney() {
 
     music.play();
 
-    document
-    .getElementById("mapIntro")
-    .style.display = "none";
+    document.querySelector(".hero").style.display = "none";
 
     document
-    .querySelector(".hero")
-    .classList.remove("hidden");
-
+        .getElementById("journalSection")
+        .classList.remove("hidden");
 }
+
 function showReason(number){
 confetti({
 
@@ -1315,5 +1313,17 @@ document
 document
 .getElementById("realLetterSection")
 .classList.remove("hidden");
+
+}
+
+function enterHero(){
+
+    document
+    .getElementById("mapIntro")
+    .style.display = "none";
+
+    document
+    .querySelector(".hero")
+    .classList.remove("hidden");
 
 }
