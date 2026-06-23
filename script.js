@@ -57,17 +57,16 @@ function startJourney() {
 
     const music = document.getElementById("bgMusic");
 
-    if(music){
-        music.volume = 0.3;
-        music.play();
-    }
+    music.volume = 0.3;
+
+    music.play();
 
     document
     .getElementById("mapIntro")
     .style.display = "none";
 
     document
-    .getElementById("journalSection")
+    .querySelector(".hero")
     .classList.remove("hidden");
 
 }
