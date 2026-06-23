@@ -2994,3 +2994,42 @@ inset 0 0 120px rgba(70,40,10,.4);
 pointer-events:none;
 
 }
+
+.map-lines{
+
+position:absolute;
+
+inset:0;
+
+background-image:
+
+linear-gradient(
+90deg,
+transparent 49%,
+rgba(90,50,20,.15) 50%,
+transparent 51%
+),
+
+linear-gradient(
+transparent 49%,
+rgba(90,50,20,.15) 50%,
+transparent 51%
+);
+
+background-size:
+180px 180px;
+
+opacity:.3;
+
+}
+
+.map-text{
+
+color:#4b2d14;
+
+font-family:'Cinzel', serif;
+
+text-shadow:none;
+
+}
+
