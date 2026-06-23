@@ -2879,3 +2879,12 @@ transform:translateY(0);
 
 }
 
+.map-open-btn{
+position:relative;
+z-index:9999;
+}
+
+#mapReveal{
+position:relative;
+z-index:9999;
+}
