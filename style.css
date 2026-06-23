@@ -2803,6 +2803,9 @@ opacity:0;
 animation:
 revealInk 2s forwards;
 
+    animation-delay:3s;
+
+animation-fill-mode:forwards;
 }
 
 .map-message{
@@ -2820,7 +2823,7 @@ opacity:0;
 animation:
 revealInk 2s forwards;
 
-animation-delay:1s;
+animation-delay:4s;
 
 animation-fill-mode:forwards;
 
@@ -2849,7 +2852,7 @@ opacity:0;
 animation:
 revealInk 2s forwards;
 
-animation-delay:2s;
+animation-delay:5s;
 
 animation-fill-mode:forwards;
 
@@ -3046,3 +3049,104 @@ position:relative;
 z-index:10;
 
 }
+
+.footprint-trail{
+
+position:relative;
+
+height:120px;
+
+margin-bottom:30px;
+
+}
+
+.fp{
+
+position:absolute;
+
+font-size:2rem;
+
+opacity:0;
+
+color:#5d3a1a;
+
+}
+
+.fp1{
+
+left:10%;
+top:70px;
+
+animation:
+footstep .8s forwards;
+
+}
+
+.fp2{
+
+left:25%;
+top:40px;
+
+animation:
+footstep .8s forwards;
+
+animation-delay:.5s;
+
+}
+
+.fp3{
+
+left:40%;
+top:70px;
+
+animation:
+footstep .8s forwards;
+
+animation-delay:1s;
+
+}
+
+.fp4{
+
+left:55%;
+top:40px;
+
+animation:
+footstep .8s forwards;
+
+animation-delay:1.5s;
+
+}
+
+.fp5{
+
+left:70%;
+top:70px;
+
+animation:
+footstep .8s forwards;
+
+animation-delay:2s;
+
+}
+
+@keyframes footstep{
+
+from{
+
+opacity:0;
+
+transform:scale(.3);
+
+}
+
+to{
+
+opacity:1;
+
+transform:scale(1);
+
+}
+
+}
+
