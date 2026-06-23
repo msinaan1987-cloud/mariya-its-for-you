@@ -2436,3 +2436,16 @@ translateY(-4px)
 scale(1.03);
 
 }
+
+
+#memoryText{
+
+color:white !important;
+
+font-size:1.25rem;
+
+line-height:2;
+
+font-family:'Cinzel', serif;
+
+}
