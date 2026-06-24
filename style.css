@@ -3483,3 +3483,19 @@ body{
 overflow-x:hidden !important;
 
 }
+
+@media (max-width:768px){
+
+h1,
+h2,
+h3,
+p{
+
+padding-left:20px;
+padding-right:20px;
+
+box-sizing:border-box;
+
+}
+
+}
