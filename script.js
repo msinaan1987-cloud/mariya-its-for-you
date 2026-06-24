@@ -1340,3 +1340,55 @@ function enterHero(){
     .classList.remove("hidden");
 
 }
+
+
+function saveMemory(){
+
+const memory =
+document
+.getElementById("mariyaMemoryInput")
+.value;
+
+if(memory.trim()===""){
+
+alert(
+"Write a memory first ❤️"
+);
+
+return;
+
+}
+
+document
+.getElementById("mariyaMemorySection")
+.style.display="none";
+
+document
+.getElementById("memorySavedSection")
+.classList.remove("hidden");
+
+document
+.getElementById("savedMemoryText")
+.innerHTML =
+
+`Mariya's Memory ❤️
+
+<br><br>
+
+"${memory}"`;
+
+}
+
+function showCrimsonSection(){
+
+document
+.getElementById("memorySavedSection")
+.style.display="none";
+
+document
+.getElementById("crimsonSection")
+.classList.remove("hidden");
+
+}
+
+
