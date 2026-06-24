@@ -3439,3 +3439,42 @@ transform:scale(.7);
 }
 
 }
+
+@media (max-width:768px){
+
+section{
+
+padding-left:25px !important;
+padding-right:25px !important;
+
+}
+
+}
+@media (max-width:768px){
+
+.hero,
+.paper,
+.memory-card,
+.future-card,
+.saved-memory-card,
+.memory-keeper-card,
+.letter-container{
+
+max-width:95% !important;
+
+margin:auto !important;
+
+}
+
+}
+
+@media (max-width:768px){
+
+p{
+
+line-height:1.8 !important;
+
+}
+
+}
+
