@@ -760,10 +760,23 @@ document
 .style.display = "none";
 
 document
+.getElementById("mariyaMemorySection")
+.classList.remove("hidden");
+
+}
+
+function showMemoryBoxSection(){
+
+document
+.getElementById("memorySavedSection")
+.style.display = "none";
+
+document
 .getElementById("memoryBoxSection")
 .classList.remove("hidden");
 
 }
+
 
 const heroMessage =
 "Happy Birthday Mariya ✨";
