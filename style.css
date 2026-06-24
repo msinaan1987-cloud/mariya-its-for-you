@@ -3444,8 +3444,7 @@ transform:scale(.7);
 
 section{
 
-padding-left:25px !important;
-padding-right:25px !important;
+box-sizing:border-box;
 
 }
 
@@ -3478,3 +3477,9 @@ line-height:1.8 !important;
 
 }
 
+html,
+body{
+
+overflow-x:hidden !important;
+
+}
