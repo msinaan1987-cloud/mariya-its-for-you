@@ -3373,4 +3373,69 @@ font-style:italic;
 
 }
 
+/* =========================
+   MOBILE FIXES
+========================= */
 
+@media (max-width:768px){
+
+html,
+body{
+overflow-x:hidden;
+}
+
+h1{
+font-size:2rem !important;
+}
+
+h2{
+font-size:1.7rem !important;
+}
+
+p{
+font-size:1rem !important;
+padding:0 15px;
+}
+
+button{
+width:90%;
+max-width:320px;
+font-size:1rem;
+}
+
+img,
+video{
+max-width:100%;
+height:auto;
+}
+
+.proposal-buttons{
+flex-direction:column !important;
+align-items:center;
+gap:15px;
+}
+
+.memory-box{
+grid-template-columns:1fr !important;
+}
+
+.paper,
+.saved-memory-card,
+.memory-keeper-card,
+.future-card,
+.memory-card,
+.letter-container{
+width:95% !important;
+padding:20px !important;
+margin:auto;
+}
+
+.star{
+transform:scale(.8);
+}
+
+.floating-lantern{
+transform:scale(.7);
+}
+
+}
