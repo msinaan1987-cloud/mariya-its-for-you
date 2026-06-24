@@ -650,49 +650,7 @@ document
 },2000);
 
 }
-function showCrimsonQuestion(){
 
-confetti({
-
-particleCount:400,
-
-spread:180
-
-});
-
-document
-.getElementById("finalProposalSection")
-.style.display="none";
-
-document
-.getElementById("heartbeatSection")
-.classList.remove("hidden");
-
-setTimeout(()=>{
-
-document
-.getElementById("heartbeatSection")
-.style.display="none";
-
-document
-.getElementById("crimsonSection")
-.classList.remove("hidden");
-
-},5000);
-
-}
-
-function showEnding(){
-
-    document
-    .getElementById("crimsonSection")
-    .style.display="none";
-
-    document
-    .getElementById("memoryBoxSection")
-    .classList.remove("hidden");
-
-}
 
 function revealSecret(){
 
@@ -703,22 +661,6 @@ document
 document
 .getElementById("secretSkySection")
 .classList.remove("hidden");
-
-}
-function showEnding(){
-
-    confetti({
-        particleCount: 250,
-        spread: 120
-    });
-
-    document
-    .getElementById("crimsonSection")
-    .style.display="none";
-
-    document
-    .getElementById("endingSection")
-    .classList.remove("hidden");
 
 }
 
