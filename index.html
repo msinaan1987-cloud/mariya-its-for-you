@@ -1,251 +1,423 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Happy Birthday Mariya ❤️</title>
+    <!-- ========================================= -->
+    <!--                META DATA                  -->
+    <!-- ========================================= -->
 
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Happy Birthday Mariya ❤️</title>
+
+    <!-- ========================================= -->
+    <!--               STYLESHEETS                 -->
+    <!-- ========================================= -->
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+    <!-- Google Fonts -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Dancing+Script:wght@400;700&display=swap"
+        rel="stylesheet"
+    >
+
 </head>
 
 <body>
 
+    <!-- ========================================= -->
+    <!--         Floating Magic Particles          -->
+    <!-- ========================================= -->
+
     <div class="magic-particles">
 
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
 
-</div>
-    
-<audio id="bgMusic" loop>
-    <source src="music/theme.mp3" type="audio/mpeg">
-</audio>
-
-    <section id="mapIntro">
-<div class="map-paper"></div>
-        <div class="map-lines"></div>
-    <div class="map-container">
-
-        <h1
-class="map-text"
-id="mapQuote">
-</h1>
-        <button
-        class="wand-btn"
-        onclick="openMap()">
-
-        🪄 Reveal The Story
-
-        </button>
-<div id="mapReveal" class="hidden">
-<svg class="map-paths" viewBox="0 0 1000 300">
-
-<path
-class="secret-path"
-d="M120 220
-   C250 100,
-   350 100,
-   450 220
-   S700 220,
-   820 120"/>
-
-</svg>
-    <div class="footprint-trail">
-
-    <span class="fp fp1">👣</span>
-    <span class="fp fp2">👣</span>
-    <span class="fp fp3">👣</span>
-    <span class="fp fp4">👣</span>
-    <span class="fp fp5">👣</span>
-
-</div>
-    
-    <h2 class="map-secret">
-        MARIYA ❤️
-    </h2>
-
-    <p class="map-message">
-        The story of us is hidden within these pages.
-    </p>
-
-  <button
-class="map-open-btn"
-onclick="enterHero()">
-
-Open The Map ❤️
-
-</button>
-    
-</div>
     </div>
 
+    <!-- ========================================= -->
+    <!--            Background Music              -->
+    <!-- ========================================= -->
+
+    <audio
+        id="bgMusic"
+        loop
+    >
+
+        <source
+            src="music/theme.mp3"
+            type="audio/mpeg"
+        >
+
+    </audio>
+
+    <!-- ========================================= -->
+    <!--             Marauder's Map Intro         -->
+    <!-- ========================================= -->
+
+    <section id="mapIntro">
+
+        <div class="map-paper"></div>
+
+        <div class="map-lines"></div>
+
+        <div class="map-container">
+
+            <h1
+                id="mapQuote"
+                class="map-text"
+            ></h1>
+
+            <button
+                class="wand-btn"
+                onclick="openMap()"
+            >
+
+                🪄 Reveal The Story
+
+            </button>
+
+            <!-- Hidden After Spell -->
+
+            <div
+                id="mapReveal"
+                class="hidden"
+            >
+
+                <svg
+                    class="map-paths"
+                    viewBox="0 0 1000 300"
+                >
+
+                    <path
+                        class="secret-path"
+                        d="
+                            M120 220
+                            C250 100,
+                            350 100,
+                            450 220
+                            S700 220,
+                            820 120
+                        "
+                    />
+
+                </svg>
+
+                <!-- Walking Footprints -->
+
+                <div class="footprint-trail">
+
+                    <span class="fp fp1">👣</span>
+                    <span class="fp fp2">👣</span>
+                    <span class="fp fp3">👣</span>
+                    <span class="fp fp4">👣</span>
+                    <span class="fp fp5">👣</span>
+
+                </div>
+
+                <h2 class="map-secret">
+
+                    MARIYA ❤️
+
+                </h2>
+
+                <p class="map-message">
+
+                    The story of us is hidden within these pages.
+
+                </p>
+
+                <button
+                    class="map-open-btn"
+                    onclick="enterHero()"
+                >
+
+                    Open The Map ❤️
+
+                </button>
+
+            </div>
+
+        </div>
+
         <div id="spellSpark"></div>
+
+    </section>
+
+    <!-- ========================================= -->
+    <!--                Hero Section              -->
+    <!-- ========================================= -->
+
+    <section class="hero hidden">
+
+        <div class="overlay"></div>
+
+        <h1 id="heroTitle"></h1>
+
+        <p>
+
+            Tonight, I want to show you a story...
+
+            <br>
+
+            Our story.
+
+        </p>
+
+        <button onclick="startJourney()">
+
+            Begin The Journey
+
+        </button>
+
+    </section>
+
+    <!-- ========================================= -->
+    <!--             Story Journal                -->
+    <!-- ========================================= -->
+
+    <section
+        id="journalSection"
+        class="hidden"
+    >
+
+        <div class="journal">
+
+            <div class="magic-particles"></div>
         
-</section>
-    
-<section class="hero hidden">
+                <div class="page active">
 
-    <div class="overlay"></div>
+            <h2>
+                When Everything Started
+            </h2>
 
-    <h1 id="heroTitle"></h1>
-
-    <p>
-        Tonight, I want to show you a story...
-        <br>
-        Our story.
-    </p>
-
-    <button onclick="startJourney()">
-        Begin The Journey
-    </button>
-
-
-</section>
-
-<section id="journalSection" class="hidden">
-
-    <div class="journal">
-        
-<div class="magic-particles"></div>
-        
-        <div class="page active">
-
-            <h2>When Everything Started</h2>
-
-           <p id="schoolMemory">
-
-</p>
+            <p id="schoolMemory"></p>
 
         </div>
+
+        <!-- ========================= -->
+        <!-- JOURNAL PAGE 2 -->
+        <!-- ========================= -->
 
         <div class="page">
 
-            <h2>When I'm All Alone</h2>
+            <h2>
+                When I'm All Alone
+            </h2>
 
-          <div id="lonelyChat"></div>
+            <div id="lonelyChat"></div>
 
         </div>
+
+        <!-- ========================= -->
+        <!-- JOURNAL PAGE 3 -->
+        <!-- ========================= -->
 
         <div class="page">
 
-            <h2>When The Universe Made Meet Us Again</h2>
+            <h2>
+                When The Universe Made Us Meet Again
+            </h2>
 
-           <div id="meetingScene"></div>
+            <div id="meetingScene"></div>
 
         </div>
+
+        <!-- ========================= -->
+        <!-- JOURNAL CONTROLS -->
+        <!-- ========================= -->
 
         <div class="controls">
 
             <div class="journal-nav">
 
-    <button class="page-btn" onclick="prevPage()">
-        ❮ Previous Page
-    </button>
+                <button
+                    class="page-btn"
+                    onclick="prevPage()">
 
-    <button class="page-btn" onclick="nextPage()">
-        Next Page ❯
-    </button>
+                    ❮ Previous Page
 
-</div>
+                </button>
+
+                <button
+                    class="page-btn"
+                    onclick="nextPage()">
+
+                    Next Page ❯
+
+                </button>
+
+            </div>
+
         </div>
 
     </div>
 
 </section>
 
-    <section id="starsSection" class="hidden">
+<!-- ====================================== -->
+<!-- STARS SECTION -->
+<!-- ====================================== -->
 
-        <div class="magic-particles">
+<section
+    id="starsSection"
+    class="hidden">
 
-                <span style="left:10%;animation-duration:12s;">✦</span>
+    <!-- Floating Particles -->
 
-    <span style="left:20%;animation-duration:18s;">✨</span>
+    <div class="magic-particles">
 
-    <span style="left:35%;animation-duration:15s;">✧</span>
+        <span
+            style="left:10%; animation-duration:12s;">
+            ✦
+        </span>
 
-    <span style="left:50%;animation-duration:20s;">✦</span>
+        <span
+            style="left:20%; animation-duration:18s;">
+            ✨
+        </span>
 
-    <span style="left:70%;animation-duration:16s;">✨</span>
+        <span
+            style="left:35%; animation-duration:15s;">
+            ✧
+        </span>
 
-    <span style="left:85%;animation-duration:13s;">✧</span>
-            
-        </div>
+        <span
+            style="left:50%; animation-duration:20s;">
+            ✦
+        </span>
 
-    <h1>Things I Love About You ✨</h1>
+        <span
+            style="left:70%; animation-duration:16s;">
+            ✨
+        </span>
 
-    <p>Click the stars...</p>
+        <span
+            style="left:85%; animation-duration:13s;">
+            ✧
+        </span>
+
+    </div>
+
+    <h1>
+        Things I Love About You ✨
+    </h1>
+
+    <p>
+        Click the stars...
+    </p>
 
     <div class="sky">
-<button
-class="secret-star"
-onclick="secretMessage()">
 
-✦
+        <button
+            class="secret-star"
+            onclick="secretMessage()">
 
-</button>
-       <button
-class="star"
-data-star="1"
-onclick="showReason(1)">
-⭐
-</button>
+            ✦
 
-<button
-class="star"
-data-star="2"
-onclick="showReason(2)">
-⭐
-</button>
+        </button>
 
-<button
-class="star"
-data-star="3"
-onclick="showReason(3)">
-⭐
-</button>
-        
+        <button
+            class="star"
+            data-star="1"
+            onclick="showReason(1)">
+
+            ⭐
+
+        </button>
+
+        <button
+            class="star"
+            data-star="2"
+            onclick="showReason(2)">
+
+            ⭐
+
+        </button>
+
+        <button
+            class="star"
+            data-star="3"
+            onclick="showReason(3)">
+
+            ⭐
+
+        </button>
+
     </div>
 
-        <div
-id="constellationMessage"
-class="hidden">
+    <div
+        id="constellationMessage"
+        class="hidden">
 
-<h2>
+        <h2>
 
-✨ Every Star Led Me Back To You ✨
+            ✨ Every Star Led Me Back To You ✨
 
-</h2>
+        </h2>
 
-<p>
+        <p>
 
-Every memory I cherish...
+            Every memory I cherish...
 
-Every moment I remember...
+            <br><br>
 
-Every path somehow leads to you. ❤️
+            Every moment I remember...
 
-</p>
+            <br><br>
 
-</div>
-        
+            Every path somehow leads to you. ❤️
+
+        </p>
+
+    </div>
+
 </section>
 
-    <div id="reasonPopup" class="popup hidden">
+<!-- ====================================== -->
+<!-- REASON POPUP -->
+<!-- ====================================== -->
+
+<div
+    id="reasonPopup"
+    class="popup hidden">
 
     <div class="popup-content">
 
-        <span class="close-btn" onclick="closePopup()">
+        <span
+            class="close-btn"
+            onclick="closePopup()">
+
             ✕
+
         </span>
 
         <div id="popupText"></div>
@@ -254,216 +426,328 @@ Every path somehow leads to you. ❤️
 
 </div>
 
-    <section id="harryPotterSection" class="hidden">
+    <!-- ====================================== -->
+<!-- HARRY POTTER STORY -->
+<!-- ====================================== -->
+
+<section
+    id="harryPotterSection"
+    class="hidden">
+
+    <!-- Slide 1 -->
 
     <div class="hp-slide active-slide">
 
-        <h1>Snape & Lily 🌸</h1>
+        <h1>
+            Snape & Lily 🌸
+        </h1>
 
         <p>
+
             Like Snape loved Lily endlessly,
+
             I want my care for you to remain sincere,
+
             no matter where life takes us.
+
         </p>
 
     </div>
 
+    <!-- Slide 2 -->
+
     <div class="hp-slide">
 
-        <h1>Ron & Hermione ✨</h1>
+        <h1>
+            Ron & Hermione ✨
+        </h1>
 
         <p>
+
             Like Ron and Hermione,
+
             I want us to grow through every laugh,
+
             every misunderstanding,
+
             and every adventure.
+
         </p>
 
     </div>
 
+    <!-- Slide 3 -->
+
     <div class="hp-slide">
 
-        <h1>Harry & Ginny ⚡</h1>
+        <h1>
+            Harry & Ginny ⚡
+        </h1>
 
         <p>
+
             Like Harry found peace with Ginny,
+
             I find comfort whenever you are part of my day.
+
         </p>
 
     </div>
 
+    <!-- Slide 4 -->
+
     <div class="hp-slide">
 
-        <h1>Our Story ❤️</h1>
+        <h1>
+            Our Story ❤️
+        </h1>
 
         <p>
+
             But more than all of them...
+
             I don't want to be anyone else's story.
 
             I want us to create our own.
+
         </p>
 
-       <button class="magic-btn"
-onclick="openPensieve()">
+        <button
+            class="magic-btn"
+            onclick="openPensieve()">
 
-⚡ Enter The Pensieve
+            ⚡ Enter The Pensieve
 
-</button>
-        
+        </button>
+
     </div>
 
-   <button class="hp-next" onclick="nextHpSlide()">
+    <!-- Next Slide Button -->
 
-⚡ Turn The Page Of Our Story ⚡
+    <button
+        class="hp-next"
+        onclick="nextHpSlide()">
 
-</button>
+        ⚡ Turn The Page Of Our Story ⚡
 
-</section>
-
-    <section id="pensieveSection" class="hidden">
-
-<h1>The Pensieve ⚡</h1>
-
-<p class="pensieve-subtitle">
-
-There are some memories
-I wish I could revisit forever.
-
-</p>
-
-<div class="memory-orbs">
-
-<button class="memory-orb"
-onclick="showMemory(1)">
-
-✨ The Sharpener Day
-
-</button>
-
-<button class="memory-orb"
-onclick="showMemory(2)">
-
-🚲 The Cycle Ride
-
-</button>
-
-<button class="memory-orb"
-onclick="showMemory(3)">
-
-🏆 The Award Ceremony
-
-</button>
-
-</div>
-
-<br>
-
-<button class="pensieve-next"
-onclick="goToFuture()">
-
-Continue To Our Future ❤️
-
-</button>
+    </button>
 
 </section>
-    
-    <section id="futureSection" class="hidden">
 
-    <h1>Our Future ✨</h1>
-        
-<p class="future-intro">
+<!-- ====================================== -->
+<!-- PENSIEVE -->
+<!-- ====================================== -->
 
-Every dream below is something
-I secretly hope we experience together someday... ❤️
+<section
+    id="pensieveSection"
+    class="hidden">
 
-</p>
-      <div class="lantern-container">
-          
-   <div class="lantern lantern1">
+    <h1>
+        The Pensieve ⚡
+    </h1>
 
-<h2>🌅 Watching Sunsets</h2>
+    <p class="pensieve-subtitle">
 
-<p>
-Watching sunsets while pretending
-I'm not staring at you.
-</p>
+        There are some memories
 
-</div>
-    <div class="lantern lantern2">
+        I wish I could revisit forever.
 
-<h2>☕ Annoying You Every Morning</h2>
+    </p>
 
-<p>
-Making fun of you before you've
-finished your first coffee.
-</p>
+    <div class="memory-orbs">
 
-</div>
+        <button
+            class="memory-orb"
+            onclick="showMemory(1)">
 
-   <div class="lantern lantern3">
+            ✨ The Sharpener Day
 
-<h2>🎂 Every Birthday</h2>
+        </button>
 
-<p>
-Being the first person to wish you
-happy birthday every year.
-</p>
+        <button
+            class="memory-orb"
+            onclick="showMemory(2)">
 
-</div>
+            🚲 The Cycle Ride
 
-    <div class="lantern lantern4">
+        </button>
 
-<h2>🏡 Our Home</h2>
+        <button
+            class="memory-orb"
+            onclick="showMemory(3)">
 
-<p>
-A place filled with laughter,
-arguments and love.
-</p>
+            🏆 The Award Ceremony
 
-</div>
-        
-    <div class="lantern lantern5">
-        <h2>❤️ Growing Old Together</h2>
-        <p>
-            Choosing each other again and again.
-        </p>
+        </button>
+
     </div>
-</div>
-        
-   <button class="letter-btn" onclick="goToLetter()">
 
-💌 Read The Letter I Wrote For You 💌
+    <br>
 
-</button>
+    <button
+        class="pensieve-next"
+        onclick="goToFuture()">
+
+        Continue To Our Future ❤️
+
+    </button>
 
 </section>
 
-    <section id="loveLetterSection" class="hidden">
+<!-- ====================================== -->
+<!-- FUTURE SECTION -->
+<!-- ====================================== -->
 
+<section
+    id="futureSection"
+    class="hidden">
+
+    <h1>
+        Our Future ✨
+    </h1>
+
+    <p class="future-intro">
+
+        Every dream below is something
+
+        I secretly hope we experience together someday... ❤️
+
+    </p>
+
+    <div class="lantern-container">
+
+        <!-- Lantern 1 -->
+
+        <div class="lantern lantern1">
+
+            <h2>
+                🌅 Watching Sunsets
+            </h2>
+
+            <p>
+
+                Watching sunsets while pretending
+
+                I'm not staring at you.
+
+            </p>
+
+        </div>
+
+        <!-- Lantern 2 -->
+
+        <div class="lantern lantern2">
+
+            <h2>
+                ☕ Annoying You Every Morning
+            </h2>
+
+            <p>
+
+                Making fun of you before you've
+
+                finished your first coffee.
+
+            </p>
+
+        </div>
+
+        <!-- Lantern 3 -->
+
+        <div class="lantern lantern3">
+
+            <h2>
+                🎂 Every Birthday
+            </h2>
+
+            <p>
+
+                Being the first person to wish you
+
+                happy birthday every year.
+
+            </p>
+
+        </div>
+
+        <!-- Lantern 4 -->
+
+        <div class="lantern lantern4">
+
+            <h2>
+                🏡 Our Home
+            </h2>
+
+            <p>
+
+                A place filled with laughter,
+
+                arguments and love.
+
+            </p>
+
+        </div>
+
+        <!-- Lantern 5 -->
+
+        <div class="lantern lantern5">
+
+            <h2>
+                ❤️ Growing Old Together
+            </h2>
+
+            <p>
+
+                Choosing each other again and again.
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <button
+        class="letter-btn"
+        onclick="goToLetter()">
+
+        💌 Read The Letter I Wrote For You 💌
+
+    </button>
+
+</section>
+
+    <!-- ========================================= -->
+<!-- 💌 LOVE LETTER SECTION -->
+<!-- ========================================= -->
+
+<section id="loveLetterSection" class="hidden">
+
+    <!-- Letter Intro -->
     <div class="letter-container">
 
+        <!-- Floating Hearts -->
         <div class="letter-hearts">
+            ❤️ ❤️ ❤️
+        </div>
 
-❤️ ❤️ ❤️
-
-</div>
-
+        <!-- Envelope -->
         <div class="letter" onclick="openLetter()">
 
-<div class="envelope">
+            <div class="envelope">
 
-    <div class="envelope-flap"></div>
+                <div class="envelope-flap"></div>
 
-    <div class="envelope-paper"></div>
+                <div class="envelope-paper"></div>
 
-</div>
+            </div>
 
-<p>Open My Heart ❤️</p>
+            <p>Open My Heart ❤️</p>
 
-</div>
+        </div>
 
     </div>
 
+    <!-- Letter Content -->
     <div id="letterContent" class="hidden">
 
         <div class="paper">
@@ -472,25 +756,35 @@ arguments and love.
 
             <p id="typedLetter"></p>
 
-           <button class="heart-btn" onclick="goToVideo()">
+            <button
+                class="heart-btn"
+                onclick="goToVideo()">
 
-🎥 Let Me Speak From My Heart 🎥
+                🎥 Let Me Speak From My Heart 🎥
 
-</button>
-            
+            </button>
+
         </div>
 
     </div>
 
 </section>
 
-    <section id="videoSection" class="hidden">
+
+<!-- ========================================= -->
+<!-- 🎥 VIDEO MESSAGE SECTION -->
+<!-- ========================================= -->
+
+<section id="videoSection" class="hidden">
 
     <h1>A Message From My Heart ❤️</h1>
 
     <p>
+
         Before I ask you something important...
+
         there's something I want you to hear.
+
     </p>
 
     <video
@@ -500,60 +794,81 @@ arguments and love.
         preload="metadata"
         width="800">
 
-        <source src="videos/mariya-birthday.mp4"
-                type="video/mp4">
+        <source
+            src="videos/mariya-birthday.mp4"
+            type="video/mp4">
 
     </video>
 
     <br><br>
 
- <button class="proposal-btn" onclick="showFinalQuestion()">
+    <button
+        class="proposal-btn"
+        onclick="showFinalQuestion()">
 
-❤️ Can I Ask You Something? ❤️
+        ❤️ Can I Ask You Something? ❤️
 
-</button>
+    </button>
+
+</section>
+
+
+<!-- ========================================= -->
+<!-- ⏳ COUNTDOWN -->
+<!-- ========================================= -->
+
+<section id="countdownSection" class="hidden">
+
+    <h1 id="countdownText">
+
+        There's something I've wanted to ask you...
+
+    </h1>
 
 </section>
 
-    <section id="countdownSection" class="hidden">
 
-<h1 id="countdownText">
-There's something I've wanted to ask you...
-</h1>
+<!-- ========================================= -->
+<!-- ❤️ FINAL PROPOSAL -->
+<!-- ========================================= -->
 
-</section>
-    
-    <section id="finalProposalSection" class="hidden">
+<section id="finalProposalSection" class="hidden">
 
     <h1>
+
         Can I Reserve You
+
         For My Future? ❤️
+
     </h1>
 
     <p>
+
         Not just for today.
 
         Not just for this birthday.
 
         But for every tomorrow
+
         that comes after.
+
     </p>
 
     <div class="proposal-buttons">
 
         <button
-        class="yes-btn"
-        onclick="showCrimsonQuestion()">
+            class="yes-btn"
+            onclick="showCrimsonQuestion()">
 
-        YES ❤️
+            YES ❤️
 
         </button>
 
         <button
-        id="runawayBtn"
-        class="no-btn">
+            id="runawayBtn"
+            class="no-btn">
 
-        NO 😏
+            NO 😏
 
         </button>
 
@@ -561,34 +876,48 @@ There's something I've wanted to ask you...
 
 </section>
 
-    <section id="heartbeatSection" class="hidden">
 
-<div class="heart">
+<!-- ========================================= -->
+<!-- ❤️ HEARTBEAT SECTION -->
+<!-- ========================================= -->
 
-❤️
+<section id="heartbeatSection" class="hidden">
 
-</div>
+    <div class="heart">
 
-<h1>
+        ❤️
 
-Thank You
+    </div>
 
-</h1>
+    <h1>
 
-<p>
+        Thank You
 
-For giving me a chance
-to love you.
+    </h1>
 
-</p>
+    <p>
+
+        For giving me a chance
+
+        to love you.
+
+    </p>
 
 </section>
     
-    <section id="mariyaMemorySection" class="hidden">
+    <!-- ========================================= -->
+<!-- ❤️ MARIYA'S MEMORY -->
+<!-- ========================================= -->
+
+<section id="mariyaMemorySection" class="hidden">
 
     <div class="memory-keeper-card">
 
-        <h1>One Last Thing... ❤️</h1>
+        <h1>
+
+            One Last Thing... ❤️
+
+        </h1>
 
         <p>
 
@@ -601,13 +930,13 @@ to love you.
         </p>
 
         <textarea
-        id="mariyaMemoryInput"
-        placeholder="Write a memory here...">
+            id="mariyaMemoryInput"
+            placeholder="Write a memory here...">
         </textarea>
 
         <button
-        class="memory-save-btn"
-        onclick="saveMemory()">
+            class="memory-save-btn"
+            onclick="saveMemory()">
 
             Lock It Into The Story ❤️
 
@@ -617,30 +946,36 @@ to love you.
 
 </section>
 
-    <section
-id="memorySavedSection"
-class="hidden">
+
+<!-- ========================================= -->
+<!-- 📖 MEMORY SAVED -->
+<!-- ========================================= -->
+
+<section
+    id="memorySavedSection"
+    class="hidden">
 
     <div class="saved-memory-card">
 
         <h1>
+
             Story Updated ❤️
+
         </h1>
 
         <p>
 
             Your memory has now become
+
             part of our story.
 
         </p>
 
-        <div id="savedMemoryText">
-
-        </div>
+        <div id="savedMemoryText"></div>
 
         <button
-        class="continue-btn"
-        onclick="showMemoryBoxSection()">
+            class="continue-btn"
+            onclick="showMemoryBoxSection()">
 
             Continue ❤️
 
@@ -649,37 +984,47 @@ class="hidden">
     </div>
 
 </section>
-    
-    <section id="crimsonSection" class="hidden">
+
+
+<!-- ========================================= -->
+<!-- ❤️ CRIMSON QUESTION -->
+<!-- ========================================= -->
+
+<section id="crimsonSection" class="hidden">
 
     <h1>
+
         Can You Be My Crimson? ❤️
+
     </h1>
 
     <p>
+
         Not because you have to.
 
         Not because I ask.
 
         But because you're the person
+
         my heart keeps choosing.
+
     </p>
 
     <div class="proposal-buttons">
 
         <button
-        class="yes-btn"
-        onclick="showEnding()">
+            class="yes-btn"
+            onclick="showEnding()">
 
-        YES ❤️
+            YES ❤️
 
         </button>
 
         <button
-        class="no-btn"
-        onclick="showEnding()">
+            class="no-btn"
+            onclick="showEnding()">
 
-        NO 💔
+            NO 💔
 
         </button>
 
@@ -687,146 +1032,190 @@ class="hidden">
 
 </section>
 
-    <section id="memoryBoxSection" class="hidden">
 
-<h1>The Memories I Still Saves Like Diamond 🎁</h1>
+<!-- ========================================= -->
+<!-- 💎 MEMORY BOX -->
+<!-- ========================================= -->
 
-<p>
-These are tiny memories
-that never left my heart.
-</p>
-
-<div class="memory-box">
-
-<button class="memory-btn" onclick="openMemory(1)">
-Memory #1 ❤️
-</button>
-
-<button class="memory-btn" onclick="openMemory(2)">
-Memory #2 ❤️
-</button>
-
-<button class="memory-btn" onclick="openMemory(3)">
-Memory #3 ❤️
-</button>
-
-<button class="memory-btn" onclick="openMemory(4)">
-Memory #4 ❤️
-</button>
-
-</div>
-
-<div id="memoryPopup" class="hidden">
-
-<div class="memory-paper">
-
-<div id="memoryText"></div>
-
-</div>
-
-</div>
-
-       <button
-class="memory-continue"
-onclick="goToRealEnding()">
-
-Continue To The Final Surprise ❤️
-
-</button>
-        
-        
-</section>
-    
-    <section id="endingSection" class="hidden">
+<section id="memoryBoxSection" class="hidden">
 
     <h1>
 
-        Thank You ❤️
+        The Memories I Still Save Like Diamonds 🎁
 
     </h1>
 
     <p>
 
-        For reading every page.
+        These are tiny memories
 
-        For listening to every word.
-
-        For becoming one of the most
-        beautiful parts of my life.
+        that never left my heart.
 
     </p>
 
-    <br>
+    <div class="memory-box">
 
-    <p>
+        <button
+            class="memory-btn"
+            onclick="openMemory(1)">
 
-        There's one final surprise
-        waiting for you.
+            Memory #1 ❤️
 
-    </p>
+        </button>
 
-    <br>
+        <button
+            class="memory-btn"
+            onclick="openMemory(2)">
 
-    <button onclick="revealSecret()">
+            Memory #2 ❤️
 
-        Open Final Surprise 🎁
+        </button>
+
+        <button
+            class="memory-btn"
+            onclick="openMemory(3)">
+
+            Memory #3 ❤️
+
+        </button>
+
+        <button
+            class="memory-btn"
+            onclick="openMemory(4)">
+
+            Memory #4 ❤️
+
+        </button>
+
+    </div>
+
+    <!-- Memory Popup -->
+
+    <div id="memoryPopup" class="hidden">
+
+        <div class="memory-paper">
+
+            <div id="memoryText"></div>
+
+        </div>
+
+    </div>
+
+    <button
+        class="memory-continue"
+        onclick="goToRealEnding()">
+
+        Continue To The Final Surprise ❤️
 
     </button>
 
 </section>
+    
+   <!-- ========================================================= -->
+<!-- FINAL ENDING -->
+<!-- ========================================================= -->
+
+<section id="endingSection" class="hidden">
+
+    <div class="ending-container">
+
+        <h1>Thank You ❤️</h1>
+
+        <p>
+            For reading every page.
+            <br>
+            For listening to every word.
+            <br>
+            For becoming one of the most beautiful parts of my life.
+        </p>
+
+        <p class="ending-note">
+            There's one final surprise waiting for you.
+        </p>
+
+        <button
+            class="magic-btn"
+            onclick="revealSecret()">
+
+            Open Final Surprise 🎁
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ========================================================= -->
+<!-- SECRET SKY -->
+<!-- ========================================================= -->
+
 <section id="secretSkySection" class="hidden">
 
-    <h1 class="star-name">
-        MARIYA ❤️
-    </h1>
+    <div class="secret-container">
 
-    <p class="star-message">
+        <h1 class="star-name">
+            MARIYA ❤️
+        </h1>
 
-        You probably forgot
-        the cut on my finger.
+        <p class="star-message">
 
-        <br><br>
+            You probably forgot the cut on my finger.
 
-        You probably forgot
-        the Dairy Milk.
+            <br><br>
 
-        <br><br>
+            You probably forgot the Dairy Milk.
 
-        I never did.
+            <br><br>
 
-    </p>
+            I never did.
 
-    <div class="final-photo">
+        </p>
 
-    <img src="images/us.png" alt="Our Memory">
+        <div class="final-photo">
 
-    <p class="photo-caption">
+            <img
+                src="images/us.png"
+                alt="Our Memory">
 
-        One photo.
+            <p class="photo-caption">
 
-        One memory.
+                One photo.
 
-        A thousand feelings. ❤️
+                <br>
 
-    </p>
+                One memory.
 
-</div>
-    
-    <button
-    class="secret-btn"
-    onclick="showRealLetter()">
+                <br>
 
-        ❤️ One Last Secret ❤️
+                A thousand feelings. ❤️
 
-    </button>
+            </p>
+
+        </div>
+
+        <button
+            class="secret-btn"
+            onclick="showRealLetter()">
+
+            ❤️ One Last Secret ❤️
+
+        </button>
+
+    </div>
 
 </section>
 
-    <section id="realLetterSection" class="hidden">
+<!-- ========================================================= -->
+<!-- FINAL LETTER -->
+<!-- ========================================================= -->
+
+<section id="realLetterSection" class="hidden">
 
     <div class="final-note">
 
-        <h1>One Last Secret ❤️</h1>
+        <h1>
+            One Last Secret ❤️
+        </h1>
 
         <p>
 
@@ -842,7 +1231,7 @@ Continue To The Final Surprise ❤️
 
             <br><br>
 
-            Not in this website.
+            Not inside this website.
 
             <br><br>
 
@@ -853,8 +1242,15 @@ Continue To The Final Surprise ❤️
     </div>
 
 </section>
-    
+
+<!-- ========================================================= -->
+<!-- JAVASCRIPT -->
+<!-- ========================================================= -->
+
 <script src="script.js"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
 </body>
+
 </html>
