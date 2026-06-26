@@ -1,9 +1,3 @@
-let discoveredStars = 0;
-
-let currentPage = 0;
-
-const pages = document.querySelectorAll(".page");
-
 /*==================================================
     HAPPY BIRTHDAY MARIYA
     SCRIPT.JS
@@ -1432,9 +1426,6 @@ an entire day better.
 
 }
 
-
-const heroMessage =
-"Happy Birthday Mariya ✨";
 
 let heroIndex = 0;
 
