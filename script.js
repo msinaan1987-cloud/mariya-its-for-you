@@ -1426,10 +1426,6 @@ an entire day better.
 
 }
 
-
-let heroIndex = 0;
-
-
 /*==================================================
                 SCHOOL MEMORY STORY
 ==================================================*/
@@ -1680,7 +1676,7 @@ ${lonelyMessages[index]}
 
 const meetingMoments=[
 
-June 7th.",
+"June 7th.",
 
 "The award ceremony.",
 
