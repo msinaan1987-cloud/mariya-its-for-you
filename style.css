@@ -47,7 +47,7 @@ body{
     color:white;
 
     overflow-x:hidden;
-
+overflow:hidden;
     min-height:100vh;
 
     position:relative;
@@ -1584,3 +1584,1828 @@ padding:12px 18px;
 }
 
 }
+
+/* =========================================================
+   PART 6 — FUTURE, LETTER & VIDEO
+=========================================================*/
+
+/* ---------- OUR FUTURE ---------- */
+
+#futureSection{
+    min-height:100vh;
+    padding:80px 20px;
+    text-align:center;
+
+    background:
+    linear-gradient(rgba(20,25,60,.45),rgba(8,8,20,.82)),
+    url("images/night-sky.jpg");
+
+    background-size:cover;
+    background-position:center;
+}
+
+#futureSection h1{
+    color:#fff;
+    font-size:2.4rem;
+    margin-bottom:20px;
+}
+
+.future-intro{
+    color:#f6e7b2;
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+    font-size:1.1rem;
+}
+
+.lantern-container{
+    margin-top:60px;
+
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+}
+
+.lantern{
+    width:250px;
+    min-height:260px;
+
+    padding:30px;
+
+    border-radius:28px;
+
+    background:
+    linear-gradient(
+        rgba(255,240,180,.22),
+        rgba(255,220,150,.08)
+    );
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.25);
+
+    box-shadow:
+    0 15px 45px rgba(0,0,0,.35);
+
+    transition:.45s;
+}
+
+.lantern:hover{
+
+    transform:
+    translateY(-10px)
+    scale(1.04);
+
+    box-shadow:
+    0 0 35px rgba(255,210,120,.45);
+
+}
+
+.lantern h2{
+
+    color:#ffe6a6;
+
+    margin-bottom:20px;
+
+}
+
+.lantern p{
+
+    color:#fff;
+
+    line-height:1.8;
+
+}
+
+.letter-btn{
+
+    margin-top:60px;
+
+}
+
+/* ---------- LOVE LETTER ---------- */
+
+#loveLetterSection{
+
+    min-height:100vh;
+
+    padding:60px 20px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:
+    linear-gradient(#fde6ef,#fff6f8);
+
+}
+
+.letter-container{
+
+    text-align:center;
+
+}
+
+.letter-hearts{
+
+    font-size:34px;
+
+    margin-bottom:30px;
+
+}
+
+.letter{
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.letter:hover{
+
+    transform:scale(1.05);
+
+}
+
+.envelope{
+
+    position:relative;
+
+    width:260px;
+
+    height:170px;
+
+    margin:auto;
+
+    background:#fff;
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+    box-shadow:
+    0 18px 50px rgba(0,0,0,.18);
+
+}
+
+.envelope-paper{
+
+    position:absolute;
+
+    inset:0;
+
+    background:#fffdf8;
+
+}
+
+.envelope-flap{
+
+    position:absolute;
+
+    width:100%;
+    height:100%;
+
+    background:#f6c8d7;
+
+    clip-path:polygon(
+    0 0,
+    100% 0,
+    50% 60%
+    );
+
+    transform-origin:top;
+
+    transition:1s;
+
+}
+
+.envelope.open
+.envelope-flap{
+
+    transform:rotateX(180deg);
+
+}
+
+.paper{
+
+    width:min(850px,95%);
+
+    margin:auto;
+
+    padding:45px;
+
+    border-radius:28px;
+
+    background:#fffefb;
+
+    box-shadow:
+    0 20px 60px rgba(0,0,0,.15);
+
+}
+
+.paper h1{
+
+    color:#b04172;
+
+    margin-bottom:25px;
+
+}
+
+.paper p{
+
+    color:#444;
+
+    line-height:1.9;
+
+    white-space:pre-wrap;
+
+}
+
+/* ---------- VIDEO ---------- */
+
+#videoSection{
+
+    min-height:100vh;
+
+    padding:70px 20px;
+
+    text-align:center;
+
+    background:
+
+    linear-gradient(
+    rgba(10,10,30,.7),
+    rgba(10,10,30,.85)
+    ),
+
+    url("images/night-sky.jpg");
+
+    background-size:cover;
+
+}
+
+#videoSection h1{
+
+    color:white;
+
+    margin-bottom:20px;
+
+}
+
+#videoSection p{
+
+    color:#f3e8c4;
+
+    margin-bottom:35px;
+
+}
+
+#birthdayVideo{
+
+    width:min(900px,100%);
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    box-shadow:
+    0 18px 55px rgba(0,0,0,.45);
+
+}
+
+.proposal-btn{
+
+    margin-top:40px;
+
+}
+
+/* ---------- COUNTDOWN ---------- */
+
+#countdownSection{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:black;
+
+}
+
+#countdownText{
+
+    color:white;
+
+    font-size:5rem;
+
+    animation:
+    pulse 1s infinite;
+
+}
+
+@keyframes pulse{
+
+0%{transform:scale(.8);}
+
+50%{transform:scale(1.15);}
+
+100%{transform:scale(.8);}
+
+}
+
+/* ==========================================
+   LOVE LETTER SECTION
+========================================== */
+
+#loveLetterSection{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px 20px;
+    background:
+        linear-gradient(rgba(255,240,245,.82),
+        rgba(255,245,250,.9)),
+        url("images/letter-bg.jpg") center/cover no-repeat;
+}
+
+.letter-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.letter{
+    cursor:pointer;
+    text-align:center;
+}
+
+.letter p{
+    margin-top:20px;
+    font-size:22px;
+    color:#7b2749;
+    font-weight:600;
+}
+
+.envelope{
+    width:270px;
+    height:180px;
+    background:#f6d9df;
+    border-radius:12px;
+    position:relative;
+    box-shadow:0 20px 45px rgba(0,0,0,.18);
+    overflow:hidden;
+    transition:.8s;
+}
+
+.envelope-paper{
+    position:absolute;
+    inset:10px;
+    background:white;
+    border-radius:8px;
+}
+
+.envelope-flap{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#efb6c8;
+    clip-path:polygon(0 0,100% 0,50% 65%);
+    transform-origin:top;
+    transition:1s;
+    z-index:4;
+}
+
+.envelope.open .envelope-flap{
+    transform:rotateX(180deg);
+}
+
+.paper{
+    max-width:700px;
+    background:#fffdf9;
+    border-radius:18px;
+    padding:35px;
+    box-shadow:0 25px 55px rgba(0,0,0,.15);
+}
+
+.paper h1{
+    text-align:center;
+    color:#b04f76;
+    margin-bottom:25px;
+}
+
+#typedLetter{
+    white-space:pre-wrap;
+    line-height:1.9;
+    font-size:18px;
+    color:#444;
+}
+
+.heart-btn{
+    margin-top:35px;
+}
+
+/* ==========================================
+   VIDEO SECTION
+========================================== */
+
+#videoSection{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:40px 20px;
+    text-align:center;
+    background:
+        linear-gradient(rgba(255,240,248,.86),
+        rgba(255,247,250,.94));
+}
+
+#videoSection h1{
+    color:#b54874;
+    margin-bottom:20px;
+}
+
+#videoSection p{
+    max-width:650px;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+#birthdayVideo{
+    width:min(100%,800px);
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 25px 45px rgba(0,0,0,.25);
+}
+
+/* ==========================================
+   COUNTDOWN
+========================================== */
+
+#countdownSection{
+    position:fixed;
+    inset:0;
+    background:#000;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+
+#countdownText{
+    font-size:80px;
+    color:white;
+    animation:pulseCountdown 1s infinite;
+}
+
+@keyframes pulseCountdown{
+
+0%,100%{
+transform:scale(1);
+opacity:1;
+}
+
+50%{
+transform:scale(1.25);
+opacity:.5;
+}
+
+}
+
+/* ==========================================
+   FINAL PROPOSAL
+========================================== */
+
+#finalProposalSection{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px 25px;
+    background:
+        linear-gradient(rgba(255,233,243,.86),
+        rgba(255,245,249,.95)),
+        url("images/proposal-bg.jpg") center/cover no-repeat;
+}
+
+#finalProposalSection h1{
+    font-size:42px;
+    color:#b13d6e;
+    margin-bottom:20px;
+}
+
+#finalProposalSection p{
+    max-width:650px;
+    line-height:1.8;
+    font-size:20px;
+    margin-bottom:40px;
+}
+
+.proposal-buttons{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.yes-btn,
+.no-btn{
+
+padding:18px 34px;
+
+border:none;
+
+border-radius:40px;
+
+font-size:18px;
+
+font-weight:700;
+
+cursor:pointer;
+
+transition:.35s;
+
+}
+
+.yes-btn{
+
+background:#ff5d94;
+
+color:white;
+
+box-shadow:0 12px 30px rgba(255,93,148,.45);
+
+}
+
+.yes-btn:hover{
+
+transform:translateY(-4px);
+
+background:#ff3c80;
+
+}
+
+.no-btn{
+
+background:white;
+
+color:#444;
+
+box-shadow:0 10px 25px rgba(0,0,0,.12);
+
+}
+
+.no-btn:hover{
+
+transform:translateY(-4px);
+
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media(max-width:768px){
+
+.paper{
+
+padding:25px;
+
+}
+
+#typedLetter{
+
+font-size:16px;
+
+line-height:1.75;
+
+}
+
+#countdownText{
+
+font-size:60px;
+
+}
+
+#finalProposalSection h1{
+
+font-size:32px;
+
+}
+
+#finalProposalSection p{
+
+font-size:17px;
+
+}
+
+.proposal-buttons{
+
+flex-direction:column;
+
+width:100%;
+
+}
+
+.yes-btn,
+.no-btn{
+
+width:100%;
+
+}
+
+}
+
+/* =========================================================
+   PART 7 — HEARTBEAT • MEMORY • CRIMSON • MEMORY BOX
+=========================================================*/
+
+/* ---------- HEARTBEAT ---------- */
+
+#heartbeatSection{
+    min-height:100vh;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    background:
+    radial-gradient(circle at center,#ffbfd2 0%,#ff9cbc 45%,#f36a99 100%);
+}
+
+.heart{
+
+    font-size:120px;
+
+    animation:heartbeat 1.2s infinite;
+
+    margin-bottom:25px;
+
+}
+
+@keyframes heartbeat{
+
+0%{transform:scale(1);}
+20%{transform:scale(1.15);}
+40%{transform:scale(.95);}
+60%{transform:scale(1.2);}
+100%{transform:scale(1);}
+
+}
+
+#heartbeatSection h1{
+
+    color:white;
+
+    font-size:3rem;
+
+}
+
+#heartbeatSection p{
+
+    color:white;
+
+    margin-top:20px;
+
+    max-width:600px;
+
+    line-height:1.8;
+
+    font-size:1.15rem;
+
+}
+
+/* ---------- MARIYA MEMORY ---------- */
+
+#mariyaMemorySection{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:40px 20px;
+
+    background:
+    linear-gradient(#fff5f8,#fde7ef);
+
+}
+
+.memory-keeper-card{
+
+    width:min(700px,95%);
+
+    background:white;
+
+    border-radius:28px;
+
+    padding:45px;
+
+    text-align:center;
+
+    box-shadow:
+    0 20px 55px rgba(0,0,0,.15);
+
+}
+
+.memory-keeper-card h1{
+
+    color:#c14b7d;
+
+    margin-bottom:25px;
+
+}
+
+.memory-keeper-card p{
+
+    line-height:1.8;
+
+    color:#555;
+
+}
+
+#mariyaMemoryInput{
+
+    width:100%;
+
+    min-height:180px;
+
+    margin-top:30px;
+
+    padding:20px;
+
+    border:none;
+
+    border-radius:18px;
+
+    background:#fff8fb;
+
+    resize:none;
+
+    font-size:16px;
+
+    outline:none;
+
+    box-shadow:
+    inset 0 0 15px rgba(0,0,0,.08);
+
+}
+
+.memory-save-btn{
+
+    margin-top:30px;
+
+}
+
+/* ---------- STORY UPDATED ---------- */
+
+#memorySavedSection{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:
+    linear-gradient(#fff4f8,#ffe9f2);
+
+}
+
+.saved-memory-card{
+
+    width:min(650px,94%);
+
+    padding:45px;
+
+    text-align:center;
+
+    border-radius:25px;
+
+    background:white;
+
+    box-shadow:
+    0 20px 60px rgba(0,0,0,.15);
+
+}
+
+.saved-memory-card h1{
+
+    color:#c04f82;
+
+    margin-bottom:20px;
+
+}
+
+.saved-memory-card p{
+
+    line-height:1.8;
+
+    color:#555;
+
+}
+
+#savedMemoryText{
+
+    margin:30px 0;
+
+    padding:20px;
+
+    border-radius:15px;
+
+    background:#fff8fb;
+
+    line-height:1.8;
+
+    color:#444;
+
+}
+
+/* ---------- CRIMSON ---------- */
+
+#crimsonSection{
+
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:40px 20px;
+
+    background:
+    linear-gradient(
+    rgba(255,175,205,.65),
+    rgba(255,210,225,.9)
+    ),
+    url("images/crimson-bg.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+#crimsonSection h1{
+
+    color:#a9205d;
+
+    font-size:3rem;
+
+    margin-bottom:25px;
+
+}
+
+#crimsonSection p{
+
+    max-width:650px;
+
+    line-height:1.9;
+
+    color:#fff;
+
+    text-shadow:0 2px 8px rgba(0,0,0,.25);
+
+    margin-bottom:40px;
+
+}
+
+/* ---------- MEMORY BOX ---------- */
+
+#memoryBoxSection{
+
+    min-height:100vh;
+
+    padding:70px 20px;
+
+    text-align:center;
+
+    background:
+    linear-gradient(#fff7fa,#ffeef5);
+
+}
+
+#memoryBoxSection h1{
+
+    color:#bb4375;
+
+    margin-bottom:20px;
+
+}
+
+#memoryBoxSection p{
+
+    color:#555;
+
+    margin-bottom:45px;
+
+}
+
+.memory-box{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:25px;
+
+    max-width:900px;
+
+    margin:auto;
+
+}
+
+.memory-btn{
+
+    border:none;
+
+    border-radius:25px;
+
+    padding:28px;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    color:white;
+
+    background:
+    linear-gradient(135deg,#ff7ca9,#ff5b90);
+
+    box-shadow:
+    0 12px 35px rgba(255,90,150,.35);
+
+    transition:.35s;
+
+}
+
+.memory-btn:hover{
+
+    transform:
+    translateY(-8px)
+    scale(1.03);
+
+}
+
+#memoryPopup{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.6);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:500;
+
+}
+
+.memory-paper{
+
+    width:min(650px,90%);
+
+    background:#fffdfb;
+
+    border-radius:25px;
+
+    padding:40px;
+
+    line-height:2;
+
+    box-shadow:
+    0 20px 55px rgba(0,0,0,.25);
+
+}
+
+.memory-continue{
+
+    margin-top:45px;
+
+}
+
+/* ---------- MOBILE ---------- */
+
+@media(max-width:768px){
+
+.memory-keeper-card,
+.saved-memory-card,
+.memory-paper{
+
+padding:28px;
+
+}
+
+#heartbeatSection h1{
+
+font-size:2.2rem;
+
+}
+
+.heart{
+
+font-size:90px;
+
+}
+
+#crimsonSection h1{
+
+font-size:2.3rem;
+
+}
+
+.memory-box{
+
+grid-template-columns:1fr;
+
+}
+
+.memory-btn{
+
+padding:22px;
+
+}
+
+}
+
+/* =====================================================
+   PART 8 — ENDING • SECRET SKY • FINAL LETTER • POLISH
+=====================================================*/
+
+/* ---------- THANK YOU SECTION ---------- */
+
+#endingSection{
+
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:40px 20px;
+
+    background:
+    linear-gradient(
+        rgba(255,247,250,.92),
+        rgba(255,236,244,.95)
+    ),
+    url("images/final-bg.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+}
+
+#endingSection h1{
+
+    font-size:3rem;
+
+    color:#c1457b;
+
+    margin-bottom:25px;
+
+}
+
+#endingSection p{
+
+    max-width:700px;
+
+    line-height:1.9;
+
+    color:#555;
+
+    margin-bottom:20px;
+
+}
+
+#endingSection button{
+
+    margin-top:25px;
+
+}
+
+/* ---------- SECRET SKY ---------- */
+
+#secretSkySection{
+
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:60px 20px;
+
+    overflow:hidden;
+
+    position:relative;
+
+    background:
+    linear-gradient(
+        rgba(5,10,35,.88),
+        rgba(20,25,60,.95)
+    ),
+    url("images/night-sky.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+/* floating stars */
+
+#secretSkySection::before{
+
+content:"";
+
+position:absolute;
+
+inset:0;
+
+background-image:
+
+radial-gradient(white 1px,transparent 1px),
+radial-gradient(white 1px,transparent 1px);
+
+background-size:90px 90px;
+
+background-position:0 0,45px 45px;
+
+opacity:.45;
+
+animation:starsMove 80s linear infinite;
+
+}
+
+@keyframes starsMove{
+
+from{
+
+transform:translateY(0);
+
+}
+
+to{
+
+transform:translateY(-600px);
+
+}
+
+}
+
+.star-name{
+
+position:relative;
+
+z-index:2;
+
+font-size:3.5rem;
+
+color:#fff;
+
+letter-spacing:4px;
+
+margin-bottom:30px;
+
+text-shadow:
+
+0 0 12px #fff,
+
+0 0 30px #ff8ab6;
+
+}
+
+.star-message{
+
+position:relative;
+
+z-index:2;
+
+max-width:650px;
+
+line-height:2;
+
+font-size:1.15rem;
+
+color:white;
+
+margin-bottom:50px;
+
+}
+
+/* ---------- FINAL PHOTO ---------- */
+
+.final-photo{
+
+position:relative;
+
+z-index:2;
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+.final-photo img{
+
+width:min(360px,90vw);
+
+border-radius:22px;
+
+box-shadow:
+
+0 20px 55px rgba(0,0,0,.45);
+
+transition:.4s;
+
+}
+
+.final-photo img:hover{
+
+transform:scale(1.03);
+
+}
+
+.photo-caption{
+
+margin-top:20px;
+
+color:#f8d9e8;
+
+line-height:1.8;
+
+font-size:18px;
+
+}
+
+/* ---------- SECRET BUTTON ---------- */
+
+.secret-btn{
+
+margin-top:40px;
+
+}
+
+/* ---------- FINAL LETTER ---------- */
+
+#realLetterSection{
+
+min-height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+padding:40px 20px;
+
+background:
+
+linear-gradient(#fff8fb,#ffeef5);
+
+}
+
+.final-note{
+
+width:min(700px,94%);
+
+padding:45px;
+
+background:white;
+
+border-radius:25px;
+
+box-shadow:
+
+0 20px 60px rgba(0,0,0,.18);
+
+text-align:center;
+
+}
+
+.final-note h1{
+
+color:#c1447a;
+
+margin-bottom:25px;
+
+}
+
+.final-note p{
+
+line-height:2;
+
+font-size:18px;
+
+color:#555;
+
+}
+
+/* ---------- COMMON BUTTONS ---------- */
+
+.memory-save-btn,
+.continue-btn,
+.memory-continue,
+.secret-btn,
+.heart-btn,
+.letter-btn,
+.proposal-btn,
+.magic-btn,
+.pensieve-next{
+
+display:inline-block;
+
+padding:15px 34px;
+
+border:none;
+
+border-radius:40px;
+
+cursor:pointer;
+
+font-size:17px;
+
+font-weight:600;
+
+color:white;
+
+background:
+
+linear-gradient(
+135deg,
+#ff79ab,
+#ff5d8d
+);
+
+box-shadow:
+
+0 12px 35px rgba(255,90,150,.35);
+
+transition:.35s;
+
+}
+
+.memory-save-btn:hover,
+.continue-btn:hover,
+.memory-continue:hover,
+.secret-btn:hover,
+.heart-btn:hover,
+.letter-btn:hover,
+.proposal-btn:hover,
+.magic-btn:hover,
+.pensieve-next:hover{
+
+transform:translateY(-5px);
+
+box-shadow:
+
+0 18px 40px rgba(255,90,150,.45);
+
+}
+
+/* ---------- HIDDEN ---------- */
+
+.hidden{
+
+display:none !important;
+
+}
+
+/* ---------- SCROLLBAR ---------- */
+
+::-webkit-scrollbar{
+
+width:8px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#e884ab;
+
+border-radius:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+background:#fff6fa;
+
+}
+
+/* ---------- MOBILE ---------- */
+
+@media(max-width:768px){
+
+#endingSection h1,
+.star-name{
+
+font-size:2.4rem;
+
+}
+
+.star-message{
+
+font-size:16px;
+
+line-height:1.8;
+
+}
+
+.final-note{
+
+padding:28px;
+
+}
+
+.final-note p{
+
+font-size:16px;
+
+}
+
+.final-photo img{
+
+width:90%;
+
+}
+
+}
+
+.hero{
+
+position:relative;
+
+min-height:100vh;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+background:
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.7)),
+url("images/hogwarts.jpg");
+
+background-size:cover;
+
+background-position:center;
+
+overflow:hidden;
+
+}
+
+.overlay{
+
+position:absolute;
+
+inset:0;
+
+background:
+
+radial-gradient(circle,
+rgba(255,255,255,.08),
+transparent 70%);
+
+pointer-events:none;
+
+}
+
+.map-paper{
+
+position:absolute;
+
+inset:0;
+
+background:
+
+url("images/parchment.jpg");
+
+background-size:cover;
+
+opacity:.9;
+
+z-index:-2;
+
+}
+
+.map-lines{
+
+position:absolute;
+
+inset:0;
+
+background-image:
+
+repeating-linear-gradient(
+
+transparent,
+
+transparent 26px,
+
+rgba(0,0,0,.05) 27px
+
+);
+
+opacity:.35;
+
+pointer-events:none;
+
+}
+
+.footprint-trail{
+
+position:absolute;
+
+width:100%;
+
+height:100%;
+
+pointer-events:none;
+
+}
+
+.fp{
+
+position:absolute;
+
+font-size:28px;
+
+opacity:0;
+
+animation:walk 5s infinite;
+
+}
+
+.fp1{
+
+left:20%;
+
+top:65%;
+
+animation-delay:0s;
+
+}
+
+.fp2{
+
+left:32%;
+
+top:55%;
+
+animation-delay:.5s;
+
+}
+
+.fp3{
+
+left:46%;
+
+top:48%;
+
+animation-delay:1s;
+
+}
+
+.fp4{
+
+left:61%;
+
+top:36%;
+
+animation-delay:1.5s;
+
+}
+
+.fp5{
+
+left:77%;
+
+top:24%;
+
+animation-delay:2s;
+
+}
+
+@keyframes walk{
+
+0%{
+
+opacity:0;
+
+transform:scale(.5);
+
+}
+
+30%{
+
+opacity:1;
+
+}
+
+100%{
+
+opacity:0;
+
+transform:scale(1.2);
+
+}
+
+}
+
+.secret-path{
+
+fill:none;
+
+stroke:#5d3b17;
+
+stroke-width:5;
+
+stroke-dasharray:1400;
+
+stroke-dashoffset:1400;
+
+animation:pathReveal 8s forwards;
+
+}
+
+@keyframes pathReveal{
+
+to{
+
+stroke-dashoffset:0;
+
+}
+
+}
+
+#spellSpark{
+
+position:absolute;
+
+width:18px;
+
+height:18px;
+
+background:white;
+
+border-radius:50%;
+
+opacity:0;
+
+box-shadow:
+
+0 0 20px white,
+
+0 0 45px cyan;
+
+}
+
+.spell-cast{
+
+animation:castSpell 2s forwards;
+
+}
+
+@keyframes castSpell{
+
+0%{
+
+opacity:1;
+
+transform:translate(0,0);
+
+}
+
+100%{
+
+opacity:0;
+
+transform:translate(650px,180px);
+
+}
+
+}
+
+.page{
+
+display:flex;
+
+flex-direction:column;
+
+}
+
+#schoolMemory,
+#lonelyChat,
+#meetingScene{
+
+flex:1;
+
+overflow-y:auto;
+
+padding-right:8px;
+
+padding-bottom:90px;
+
+}
+
+.memory-orb{
+
+width:170px;
+
+height:170px;
+
+border-radius:50%;
+
+background:
+
+radial-gradient(circle,#d5ecff,#7eb8ff);
+
+box-shadow:
+
+0 0 35px rgba(126,184,255,.8);
+
+animation:orbFloat 3s ease-in-out infinite;
+
+}
+
+@keyframes orbFloat{
+
+50%{
+
+transform:translateY(-12px);
+
+}
+
+}
+
+.lantern{
+
+animation:lanternFloat 5s ease-in-out infinite;
+
+}
+
+@keyframes lanternFloat{
+
+50%{
+
+transform:translateY(-15px);
+
+}
+
+}
+
