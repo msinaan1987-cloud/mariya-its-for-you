@@ -1889,7 +1889,42 @@ document.querySelectorAll("button").forEach(button=>{
 
 });
 
+.hp-slide{
 
+display:none;
+
+}
+
+.hp-slide.active-slide{
+
+display:flex;
+
+}
+
+const runaway=document.getElementById("runawayBtn");
+
+if(runaway){
+
+runaway.addEventListener("mouseover",()=>{
+
+runaway.style.position="absolute";
+
+runaway.style.left=Math.random()*70+"vw";
+
+runaway.style.top=Math.random()*70+"vh";
+
+});
+
+}
+
+
+function showMemoryBoxSection(){
+
+document.getElementById("memorySavedSection").style.display="none";
+
+document.getElementById("memoryBoxSection").classList.remove("hidden");
+
+}
 
 /*==================================================
                 END OF SCRIPT
