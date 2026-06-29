@@ -1937,17 +1937,6 @@ document.querySelectorAll("button").forEach(button=>{
 
 });
 
-.hp-slide{
-
-display:none;
-
-}
-
-.hp-slide.active-slide{
-
-display:flex;
-
-}
 
 /* ==========================================================
 SHOW MEMORY BOX
