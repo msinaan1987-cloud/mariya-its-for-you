@@ -1967,10 +1967,5 @@ window.scrollTo({
                 END OF SCRIPT
 ==================================================*/
 
-console.log(
 
-"✨ Happy Birthday Mariya loaded successfully ❤️"
-
-);
-
-
+console.log("THIS IS MY CURRENT SCRIPT");
