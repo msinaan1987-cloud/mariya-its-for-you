@@ -16,7 +16,69 @@ let hpCurrent = 0;
 const pages = document.querySelectorAll(".page");
 const hpSlides = document.querySelectorAll(".hp-slide");
 
+/* ==========================================================
+SECTION MANAGER
+==========================================================*/
 
+const ALL_SECTIONS = [
+
+"heroSection",
+"mapIntro",
+"journalSection",
+"starsSection",
+"harryPotterSection",
+"pensieveSection",
+"futureSection",
+"loveLetterSection",
+"videoSection",
+"countdownSection",
+"finalProposalSection",
+"heartbeatSection",
+"mariyaMemorySection",
+"memorySavedSection",
+"crimsonSection",
+"memoryBoxSection",
+"endingSection",
+"secretSkySection",
+"realLetterSection"
+
+];
+
+function hideAllSections(){
+
+ALL_SECTIONS.forEach(id=>{
+
+const section=document.getElementById(id);
+
+if(section){
+
+section.classList.add("hidden");
+
+}
+
+});
+
+}
+
+function showSection(id){
+
+hideAllSections();
+
+const section=document.getElementById(id);
+
+if(section){
+
+section.classList.remove("hidden");
+
+}
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
 
 /*==================================================
                 PAGE INITIALIZATION
@@ -78,7 +140,7 @@ function nextPage(){
 
     else{
 
-        document.getElementById("journalSection").style.display="none";
+        document.getElementById("journalSection").classList.add("hidden");
 
         document
         .getElementById("starsSection")
@@ -118,7 +180,7 @@ function startJourney(){
 
     document
     .querySelector(".hero")
-    .style.display="none";
+    .classList.add("hidden");
 
     document
     .getElementById("journalSection")
@@ -661,7 +723,7 @@ function startHarryPotter(){
 
     document
     .getElementById("starsSection")
-    .style.display="none";
+    .classList.add("hidden");
 
     document
     .getElementById("harryPotterSection")
@@ -699,7 +761,7 @@ function openPensieve(){
 
     document
     .getElementById("harryPotterSection")
-    .style.display="none";
+    .classList.add("hidden");
 
     document
     .getElementById("pensieveSection")
@@ -780,13 +842,13 @@ function goToFuture(){
     const hp=document.getElementById("harryPotterSection");
 
     if(hp){
-        hp.style.display="none";
+        hp.classList.add("hidden");
     }
 
     const pensieve=document.getElementById("pensieveSection");
 
     if(pensieve){
-        pensieve.style.display="none";
+        pensieve.classList.add("hidden");
     }
 
     document
@@ -849,7 +911,7 @@ function goToLetter(){
 
     document
     .getElementById("futureSection")
-    .style.display="none";
+    .classList.add("hidden");
 
     document
     .getElementById("loveLetterSection")
@@ -921,7 +983,7 @@ function openLetter(){
 
         document
         .querySelector(".letter-container")
-        .style.display="none";
+        .classList.add("hidden");
 
         document
         .getElementById("letterContent")
@@ -995,7 +1057,7 @@ function goToVideo(){
 
     document
     .getElementById("loveLetterSection")
-    .style.display="none";
+    .classList.add("hidden");
 
     document
     .getElementById("videoSection")
@@ -1013,7 +1075,7 @@ function showFinalQuestion(){
 
     document
     .getElementById("videoSection")
-    .style.display="none";
+    .classList.add("hidden");
 
     document
     .getElementById("countdownSection")
@@ -1045,7 +1107,7 @@ function showFinalQuestion(){
 
             document
             .getElementById("countdownSection")
-            .style.display="none";
+            .classList.add("hidden");
 
             document
             .getElementById("finalProposalSection")
@@ -1074,7 +1136,7 @@ function showCrimsonQuestion(){
 
     document
     .getElementById("finalProposalSection")
-    .style.display="none";
+    .classList.add("hidden");
 
     document
     .getElementById("heartbeatSection")
@@ -1084,7 +1146,7 @@ function showCrimsonQuestion(){
 
         document
         .getElementById("heartbeatSection")
-        .style.display="none";
+        .classList.add("hidden");
 
         document
         .getElementById("crimsonSection")
@@ -1100,7 +1162,7 @@ function showEnding(){
 
     document
     .getElementById("crimsonSection")
-    .style.display="none";
+    .classList.add("hidden");
 
     document
     .getElementById("mariyaMemorySection")
@@ -1126,7 +1188,7 @@ function saveMemory(){
 
     document
     .getElementById("mariyaMemorySection")
-    .style.display="none";
+    .classList.add("hidden");
 
     document
     .getElementById("memorySavedSection")
@@ -1146,25 +1208,11 @@ function saveMemory(){
 
 
 
-function showCrimsonSection(){
-
-    document
-    .getElementById("memorySavedSection")
-    .style.display="none";
-
-    document
-    .getElementById("crimsonSection")
-    .classList.remove("hidden");
-
-}
-
-
-
 function goToRealEnding(){
 
     document
     .getElementById("memoryBoxSection")
-    .style.display="none";
+    .classList.add("hidden");
 
     document
     .getElementById("endingSection")
@@ -1178,7 +1226,7 @@ function revealSecret(){
 
     document
     .getElementById("endingSection")
-    .style.display="none";
+    .classList.add("hidden");
 
     document
     .getElementById("secretSkySection")
@@ -1192,7 +1240,7 @@ function showRealLetter(){
 
     document
     .getElementById("secretSkySection")
-    .style.display="none";
+    .classList.add("hidden");
 
     document
     .getElementById("realLetterSection")
@@ -1250,7 +1298,7 @@ function openMap(){
 
         document
         .querySelector(".wand-btn")
-        .style.display="none";
+        .classList.add("hidden");
 
     },2000);
 
@@ -1286,7 +1334,7 @@ function enterHero(){
 
     document
     .getElementById("mapIntro")
-    .style.display="none";
+    .classList.add("hidden");
 
     document
     .querySelector(".hero")
@@ -1901,7 +1949,31 @@ display:flex;
 
 }
 
+/* ==========================================================
+SHOW MEMORY BOX
+==========================================================*/
 
+function showMemoryBoxSection(){
+
+// Hide Crimson
+const crimson = document.getElementById("crimsonSection");
+if(crimson){
+    crimson.classList.add("hidden");
+}
+
+// Show Memory Box
+const memoryBox = document.getElementById("memoryBoxSection");
+if(memoryBox){
+    memoryBox.classList.remove("hidden");
+}
+
+// Smooth Scroll
+window.scrollTo({
+    top:0,
+    behavior:"smooth"
+});
+
+}
 /*==================================================
                 END OF SCRIPT
 ==================================================*/
@@ -1911,6 +1983,5 @@ console.log(
 "✨ Happy Birthday Mariya loaded successfully ❤️"
 
 );
-
 
 
